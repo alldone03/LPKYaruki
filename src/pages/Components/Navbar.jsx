@@ -21,16 +21,15 @@ export default function Navbar() {
   const navbarMenu = [
     { name: "Home", link: "/" },
     { name: "Tentang Kami", link: "/tentang-kami" },
-    { name: "Keunggulan", link: "/keunggulan" },
+    { name: "Program Kami", link: "/program-kami" },
     { name: "Hubungi", link: "/hubungi" },
     { name: "Artikel", link: "/artikel" },
   ];
   return (
     <>
       <div
-        className={`navbar fixed top-0 right-0 left-0 z-50 bg-white shadow-sm transition-all duration-300 ${
-          showNavbar ? "opacity-100 md:hidden" : "pointer-events-none opacity-0"
-        }`}
+        className={`navbar fixed top-0 right-0 left-0 z-50 bg-white shadow-sm transition-all duration-300 ${showNavbar ? "opacity-100 md:hidden" : "pointer-events-none opacity-0"
+          }`}
       >
         <div className="flex-1">
           {/* <a className="btn btn-gho*st text-xl">LPK Yaruki</a> */}
@@ -78,25 +77,21 @@ export default function Navbar() {
       </div>
       {/* desktop */}
       <div
-        className={`${
-          showNavbar ? "hidden" : "block"
-        } fixed top-0 right-0 left-0 z-50 shadow-sm transition-all duration-300 md:block`}
+        className={`${showNavbar ? "hidden" : "block"
+          } fixed top-0 right-0 left-0 z-50 shadow-sm transition-all duration-300 md:block`}
       >
         <div
-          className={`navbar z-50 flex h-16 min-w-screen items-center justify-between px-4 ${
-            showNavbar ? "md:bg-white" : "backdrop-blur-sm md:shadow-sm"
-          } ${
-            showNavbar ? "md:shadow-sm" : "md:shadow-none"
-          } fixed top-0 right-0 left-0 transition-all duration-300`}
+          className={`navbar z-50 flex h-16 min-w-screen items-center justify-between px-4 ${showNavbar ? "md:bg-white" : "backdrop-blur-sm md:shadow-sm"
+            } ${showNavbar ? "md:shadow-sm" : "md:shadow-none"
+            } fixed top-0 right-0 left-0 transition-all duration-300`}
         >
           <div className="ml-2 flex flex-col items-center justify-center">
             <img src={Logo} alt="Logo" className="h-12 rounded-md" />
           </div>
           <div className="hidden md:block">
             <div
-              className={`flex h-full list-none items-center justify-center text-2xl ${
-                showNavbar ? "text-black" : "text-white"
-              } `}
+              className={`flex h-full list-none items-center justify-center text-2xl ${showNavbar ? "text-black" : "text-white"
+                } `}
             >
               {navbarMenu.map((item, index) => (
                 <li className="" key={index}>

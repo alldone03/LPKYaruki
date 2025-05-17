@@ -1,3 +1,4 @@
+import ProgramKami from "../pages/Program-kami";
 import Home from "../pages/Home";
 import TentangKami from "../pages/Tentang-kami";
 
@@ -11,6 +12,11 @@ const routes = [
     path: "/tentang-kami",
     element: <TentangKami />,
     name: "Tentang-Kami",
+  },
+  {
+    path: "/program-kami",
+    element: <ProgramKami />,
+    name: "Program-Kami",
   },
 ];
 

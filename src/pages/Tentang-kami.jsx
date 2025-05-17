@@ -176,27 +176,20 @@ export default function TentangKami() {
                     <div className="card-body">
                         <h2 className="text-center text-2xl font-bold">Tujuan Kami</h2>
                         <div className="flex flex-col gap-2">
-
-
                             <div className="card card-side bg-base-100 shadow-sm">
-                                <figure>
-                                    <img
-                                        src={goal1}
-                                        alt="Movie" className="w-30 h-30 object-fill" />
-                                </figure>
+                                <img
+                                    src={goal1}
+                                    alt="Movie" className="w-30 h-30 object-fill" />
                                 <div className="card-body">
                                     <h2 className="card-title">Goal #1</h2>
                                     <p>Meningkatkan kompetensi global karyawan
                                     </p>
-
                                 </div>
                             </div>
                             <div className="card card-side bg-base-100 shadow-sm">
-                                <figure>
-                                    <img
-                                        src={goal2}
-                                        alt="Movie" className="w-30 h-30 object-fill" />
-                                </figure>
+                                <img
+                                    src={goal2}
+                                    alt="Movie" className="w-30 h-30 object-fill" />
                                 <div className="card-body">
                                     <h2 className="card-title">Goal #2</h2>
                                     <p>Memperluas jaringan bisnis internasional
@@ -206,11 +199,10 @@ export default function TentangKami() {
                                 </div>
                             </div>
                             <div className="card card-side bg-base-100 shadow-sm">
-                                <figure>
-                                    <img
-                                        src={goal3}
-                                        alt="Movie" className="w-30 h-30 object-fill" />
-                                </figure>
+                                <img
+                                    src={goal3}
+                                    alt="Movie" className="w-30 h-30 object-fill" />
+
                                 <div className="card-body">
                                     <h2 className="card-title">Goal #3</h2>
                                     <p>Meningkatkan kualitas dan efisiensi layanan
@@ -224,9 +216,9 @@ export default function TentangKami() {
 
 
 
-            </div>
+            </div >
             {/* Section 6 */}
-            <div className="flex flex-col items-center border-t-4 pt-10">
+            <div div className="flex flex-col items-center border-t-4 pt-10" >
                 <h1 className="mb-2 text-2xl font-bold">Capaian Berikutnya</h1>
                 <div className="card bg-base-100 my-2 w-screen shadow-sm md:my-0 md:w-3xl">
                     <div className="card-body">
@@ -240,7 +232,7 @@ export default function TentangKami() {
                             <img src={Logo} alt="" className="mb-2" />
                         </figure>
                     </div>
-                </div></div>
+                </div></div >
             <div>
 
             </div>
