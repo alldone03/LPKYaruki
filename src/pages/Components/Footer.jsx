@@ -1,15 +1,55 @@
+import { Link } from "react-router";
 import Logo from "../../assets/logo.png";
+import { useNavbar } from "../../context/NavbarContext";
+
+
+
 export default function Footer() {
+  const homepage = import.meta.env.VITE_REACT_APP_HOMEPAGE || process.env.REACT_APP_HOMEPAGE;
+  const { navbarLinks } = useNavbar();
+
   return (
     <>
+      {/* // floating */}
+      <div className="fixed bottom-0 right-0  z-50 flex flex-col justify-center gap-2 p-4  shadow-sm md:hidden">
+
+        <a href="mailto:admin@yarukid.com"><button className="btn bg-white text-black border-[#e5e5e5]">
+          <svg aria-label="Email icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g strokeLinejoin="round" strokeLinecap="round" strokeWidth="2" fill="none" stroke="black"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></g></svg>
+          Email Admin
+        </button></a>
+        <a href="https://wa.me/+62811918538" target="_blank" rel="noopener noreferrer">
+          <button className="btn bg-[#03C755] text-white border-[#00b544]">
+            <svg aria-label="Line logo" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g fillRule="evenodd" strokeLinejoin="round" fill="white"><path fillRule="nonzero" d="M12.91 6.57c.232 0 .42.19.42.42 0 .23-.188.42-.42.42h-1.17v.75h1.17a.42.42 0 1 1 0 .84h-1.59a.42.42 0 0 1-.418-.42V5.4c0-.23.188-.42.42-.42h1.59a.42.42 0 0 1-.002.84h-1.17v.75h1.17zm-2.57 2.01a.421.421 0 0 1-.757.251l-1.63-2.217V8.58a.42.42 0 0 1-.42.42.42.42 0 0 1-.418-.42V5.4a.418.418 0 0 1 .755-.249L9.5 7.366V5.4c0-.23.188-.42.42-.42.23 0 .42.19.42.42v3.18zm-3.828 0c0 .23-.188.42-.42.42a.42.42 0 0 1-.418-.42V5.4c0-.23.188-.42.42-.42.23 0 .418.19.418.42v3.18zM4.868 9h-1.59c-.23 0-.42-.19-.42-.42V5.4c0-.23.19-.42.42-.42.232 0 .42.19.42.42v2.76h1.17a.42.42 0 1 1 0 .84M16 6.87C16 3.29 12.41.376 8 .376S0 3.29 0 6.87c0 3.208 2.846 5.896 6.69 6.405.26.056.615.172.705.394.08.2.053.518.026.722 0 0-.092.565-.113.685-.035.203-.16.79.693.432.854-.36 4.607-2.714 6.285-4.646C15.445 9.594 16 8.302 16 6.87"></path></g></svg>
+            WA Admin
+          </button></a>
+      </div>
       <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
         <aside>
-          <img src={Logo} alt="Logo" className="h-12 rounded-sm" />
-          <p>
-            <div className="text-2xl font-bold">LPK Yaruki</div>
+          <img src={Logo} alt="Logo" className="h-24 rounded-sm" />
+          <p >
+            <div className="text-3xl font-bold">LPK Yaruki</div>
             <br />
-            "Share Value, Membangun Manusia, Membangun Bangsa Indonesia"
+            <div className="text-lg">
+
+              "Share Value, Membangun Manusia, Membangun Bangsa Indonesia"
+            </div>
             <br />
+            <div className="flex flex-col gap-2 mt-2">
+              <ul className="list-outside list-disc">
+
+
+                {navbarLinks.map((link, index) => (
+                  <li>
+                    <Link
+                      key={index}
+                      to={link.path}
+                      className="text-sm text-blue-500 hover:underline"
+                    >
+                      {link.name}
+                    </Link></li>
+                ))}
+              </ul>
+            </div>
             <br />
             <div className="text-sm">
               Jl Merak Raya H1 No. 134 Jababeka II, Desa Mekarmukti, Kecamatan
@@ -17,16 +57,16 @@ export default function Footer() {
             </div>
             <br />
             <div className="text-sm">
-              0812-1234-5678
+              <a href="https://wa.me/+62811918538" > Whatsapp (Hasbian)</a>
               <br />
-              yaruki@gmail.com
+              <a href="mailto:admin@yarukid.com">admin@yarukid.com</a>
               <br />
-              <a
-                href="https://www.yaruki.co.id"
+              <Link
+                href={homepage}
                 className="text-blue-500 hover:underline"
               >
-                www.yaruki.co.id
-              </a>
+                {homepage}
+              </Link>
             </div>
             <br />
             {/* jam kerja */}
@@ -36,44 +76,7 @@ export default function Footer() {
             </div>
           </p>
         </aside>
-        <nav>
-          <h6 className="footer-title">Social</h6>
-          <div className="grid grid-flow-col gap-4">
-            <a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                className="fill-current"
-              >
-                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-              </svg>
-            </a>
-            <a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                className="fill-current"
-              >
-                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-              </svg>
-            </a>
-            <a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                className="fill-current"
-              >
-                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-              </svg>
-            </a>
-          </div>
-        </nav>
+
       </footer>
     </>
   );

@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import Logo from "../../assets/logo.png";
 import { Link } from "react-router";
+import jpnflag from "../../assets/japan-flag.png";
+import { useNavbar } from "../../context/NavbarContext";
 
 export default function Navbar() {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -18,13 +20,8 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  const navbarMenu = [
-    { name: "Home", link: "/" },
-    { name: "Tentang Kami", link: "/tentang-kami" },
-    { name: "Program Kami", link: "/program-kami" },
-    { name: "Hubungi", link: "/hubungi" },
-    { name: "Artikel", link: "/artikel" },
-  ];
+  const { navbarLinks } = useNavbar();
+
   return (
     <>
       <div
@@ -61,14 +58,14 @@ export default function Navbar() {
               tabIndex={0}
               className="dropdown-content menu bg-base-100 rounded-box z-2 w-72 p-2 shadow-sm md:hidden"
             >
-              {navbarMenu.map((item, index) => (
+              {navbarLinks.map((item, index) => (
                 <li key={index}>
-                  <a
-                    href={item.link}
+                  <Link
+                    to={item.path}
                     className="block px-4 py-2 hover:bg-gray-100"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -86,17 +83,17 @@ export default function Navbar() {
             } fixed top-0 right-0 left-0 transition-all duration-300`}
         >
           <div className="ml-2 flex flex-col items-center justify-center">
-            <img src={Logo} alt="Logo" className="h-12 rounded-md" />
+            <img src={Logo} alt="Logo" className="h-16 rounded-md" />
           </div>
           <div className="hidden md:block">
             <div
               className={`flex h-full list-none items-center justify-center text-2xl ${showNavbar ? "text-black" : "text-white"
                 } `}
             >
-              {navbarMenu.map((item, index) => (
+              {navbarLinks.map((item, index) => (
                 <li className="" key={index}>
                   <Link
-                    to={item.link}
+                    to={item.path}
                     className="block px-4 py-2 hover:rounded hover:bg-gray-100 hover:text-black"
                   >
                     {item.name}
@@ -106,10 +103,7 @@ export default function Navbar() {
             </div>
           </div>
           <div className="h-full w-24 px-2">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg"
-              alt="Japan Flag"
-            />
+            <img src={jpnflag} alt="JPNFlag" />
           </div>
         </div>
       </div>

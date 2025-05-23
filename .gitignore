@@ -22,3 +22,5 @@ di5st-ssr
 *.njsproj
 *.sln
 *.sw?
+
+.env

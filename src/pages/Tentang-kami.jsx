@@ -16,7 +16,7 @@ import goal3 from "../assets/tentang-kami/goal3.png";
 export default function TentangKami() {
     return (
         <>
-            <title>Tentang Kami</title>
+            <title>Tentang Kami | LPK Yaruki Solusi Indonesia</title>
             {/* // center phone */}
             <Navbar />
             {/* Section 1 */}

@@ -1,15 +1,22 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import routes from "./routes/web";
+import { NavbarProvider } from "./context/NavbarProvider";
+
 
 function App() {
+
+
   return (
-    <BrowserRouter>
-      <Routes>
-        {routes.map((route, index) => (
-          <Route key={index} path={route.path} element={route.element} />
-        ))}
-      </Routes>
-    </BrowserRouter>
+    <NavbarProvider>
+
+      <BrowserRouter>
+        <Routes>
+          {routes.map((route, index) => (
+            <Route key={index} path={route.path} element={route.element} />
+          ))}
+        </Routes>
+      </BrowserRouter>
+    </NavbarProvider>
   );
 }
 

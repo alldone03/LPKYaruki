@@ -3,10 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://alldone03.github.io/LPKYaruki",
+  "homepage": "https://yaruki.com/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "sync-homepage": "node scripts/sync-homepage.js",
+    "build": "npm run sync-homepage && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "format": "prettier --write .",
