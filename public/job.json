@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "pekerjaan": "Waterproofing & Pengecatan",
+        "gaji": "Gaji pokok: ¥190,000\nLembur tetap: ¥74,500",
+        "pengalaman_dan_kualifikasi": "Pengalaman dalam waterproofing urethane Pengalaman bekerja di proyek sekolah atau pekerjaan umum lainnya",
+        "lokasi": "Chiba-ken",
+        "isi_pekerjaan": "Waterproofing urethane\nPengecatan dinding luar\nBanyak proyek di sekolah dan pekerjaan umum lainnya",
+        "N1": 0,
+        "N2": null,
+        "N3": 1,
+        "N4": 1,
+        "N5": 1,
+        "Status": "Open"
+    },
+    {
+        "id": 2,
+        "pekerjaan": "Pemasangan besi beton",
+        "gaji": "Gaji Pokok: ¥250.000",
+        "pengalaman_dan_kualifikasi": "Pembangunan Jalan",
+        "lokasi": "Daerah Tokyo dan 3 prefektur sekitarnya",
+        "isi_pekerjaan": "Pemasangan besi beton, pekerjaan konstruksi tinggi（Tobi）",
+        "N1": 1,
+        "N2": 1,
+        "N3": 1,
+        "N4": 1,
+        "N5": 0,
+        "Status": "Close"
+    }
+]

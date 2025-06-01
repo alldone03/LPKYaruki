@@ -13,6 +13,10 @@ const navbarLinks = [
         path: "/program-kami",
         name: "Program Kami",
     },
+    {
+        path: "/lowongan-kerja",
+        name: "Lowongan kerja",
+    },
 ];
 
 export const NavbarProvider = ({ children }) => {

@@ -30,7 +30,11 @@ export default function Navbar() {
       >
         <div className="flex-1">
           {/* <a className="btn btn-gho*st text-xl">LPK Yaruki</a> */}
-          <img src={Logo} alt="Logo" className="h-12 rounded-sm" />
+
+          <Link to={window.location.origin} >
+
+            <img src={Logo} alt="Logo" className="h-12 rounded-sm" />
+          </Link>
         </div>
         <div className="flex-none">
           <div className="dropdown dropdown-end">
@@ -83,7 +87,9 @@ export default function Navbar() {
             } fixed top-0 right-0 left-0 transition-all duration-300`}
         >
           <div className="ml-2 flex flex-col items-center justify-center">
-            <img src={Logo} alt="Logo" className="h-16 rounded-md" />
+            <Link to={window.location.origin} className="">
+              <img src={Logo} alt="Logo" className="h-16 rounded-md" />
+            </Link>
           </div>
           <div className="hidden md:block">
             <div
@@ -94,7 +100,7 @@ export default function Navbar() {
                 <li className="" key={index}>
                   <Link
                     to={item.path}
-                    className="block px-4 py-2 hover:rounded hover:bg-gray-100 hover:text-black"
+                    className="block px-4 py-2 hover:rounded hover:bg-gray-100 hover:text-black text-center"
                   >
                     {item.name}
                   </Link>
@@ -103,6 +109,7 @@ export default function Navbar() {
             </div>
           </div>
           <div className="h-full w-24 px-2">
+
             <img src={jpnflag} alt="JPNFlag" />
           </div>
         </div>

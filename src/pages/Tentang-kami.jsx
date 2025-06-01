@@ -35,24 +35,20 @@ export default function TentangKami() {
                             </p>
                         </article>
 
-                        <div className="mt-8 flex justify-center">
-                            <button className="btn rounded bg-white px-6 py-2 font-semibold text-blue-700 hover:bg-gray-200">
-                                Daftar
-                            </button>
-                        </div>
+
                     </div>
                 </div>
             </div>
             {/* Section 2 */}
             <div className="flex h-screen flex-col items-center pt-20">
-                <h1 className="mb-5 text-2xl font-bold">Tentang Perusahaan</h1>
-                <p className="px-4 text-justify indent-10 md:px-9">
+                <h1 className="mb-5 text-2xl md:text-4xl  font-bold">Tentang Perusahaan</h1>
+                <p className="px-4 text-justify indent-10 md:px-9 md:text-2xl py-10">
                     PT Yaruki Solusi Indonesia merupakan perusahaan yang dibangun oleh
                     para ahli di bidang operational & service excellence, lean
                     practitioner, total productive maintenance, cleaning & maintenance
                     service dan people development.
                 </p>
-                <table className="mx-2 my-4 w-full table-auto border-gray-300 text-base">
+                <table className="mx-2 my-4 w-full md:w-fit md:px-7 table-auto border-gray-300 text-base md:text-2xl">
                     <tbody>
                         <tr>
                             <td className="w-1/3 px-4 py-2 font-bold">Nama Perusahaan</td>
@@ -62,7 +58,7 @@ export default function TentangKami() {
                         <tr>
                             <td className="px-4 py-2 font-bold">Tanggal Berdiri</td>
                             <td className="px-4 py-2">:</td>
-                            <td className="px-4 py-2">2024</td>
+                            <td className="px-4 py-2">2025</td>
                         </tr>
                         <tr>
                             <td className="px-4 py-2 font-bold">Alamat</td>
@@ -88,31 +84,48 @@ export default function TentangKami() {
             </div>
             {/* Section 3 */}
             <div className="flex h-screen flex-col items-center border-t-4 pt-20">
-                <h1 className="mb-5 text-2xl font-bold">Visi & Misi</h1>
-                <p className="px-4 text-justify indent-10 md:px-9">
-                    Kami berkomitmen untuk memberikan produk dan layanan berkualitas
-                    tinggi sekaligus berfokus pada kesehatan dan keselamatan kerja,
-                    keberlanjutan lingkungan, dan kesejahteraan masyarakat.
+                <h1 className="mb-5 text-2xl md:text-4xl font-bold">Visi & Misi</h1>
+                <p className="px-4 text-justify indent-10 md:px-9 md:text-2xl">
+                    Memberikan pelayanan dan fasilitas terbaik untuk mempersiapkan tenaga kerja professional untuk dalam dan luar negeri.
                 </p>
                 <br />
-                <div className="card bg-primary text-primary-content w-96">
+                <div className="card bg-primary text-primary-content w-96 md:w-1/2">
                     <div className="card-body">
-                        <h2 className="text-center text-2xl font-bold">Visi</h2>
-                        <p className="text-justify indent-8">
-                            Menjadi mitra terbaik bagi perusahaan yang ingin mencapai; Operasi
-                            Lean, Pemeliharaan Produktif Total (TPM), Integrasi antara Program
-                            ERP & TPM, dan Pemeliharaan Fasilitas Terpadu (Fasilitas, Bangunan
-                            & Utilitas, Layanan Kebersihan).
+                        <h2 className="text-center md:text-4xl text-2xl font-bold">Visi</h2>
+                        <p className="text-justify indent-8 md:text-2xl">
+
+                            <table>
+                                <tbody>
+                                    <th >
+
+                                        Menjadi mitra terbaik bagi Perusahaan dan individu dalam :
+                                    </th>
+                                    <tr>
+                                        Pelatihan Bahasa asing dan skill terkini
+                                    </tr>
+                                    <tr>
+                                        Penyedia tenaga kerja terampil di dalam & luar negeri
+                                    </tr>
+                                    <tr>Partner Excellent operations [Lean] di bidang :</tr>
+                                    <tr>
+                                        Manufacturing : Total Productive Maint’ce (mesin, equipment & building),Welding,System Integrasi ERP,dll
+                                    </tr>
+                                    <tr>
+                                        Non Manufacturing : IT,Finance,Logistics,Services,dll
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
                         </p>
                     </div>
                 </div>
                 <br />
-                <div className="card bg-primary text-primary-content w-96">
+                <div className="card bg-primary text-primary-content w-96 md:w-1/2">
                     <div className="card-body">
-                        <h2 className="text-center text-2xl font-bold">Misi</h2>
-                        <p className="text-justify indent-8">
-                            Mengutamakan kepuasan pelanggan, perbaikan berkelanjutan, dan
-                            budaya belajar
+                        <h2 className="text-center text-2xl md:text-4xl font-bold">Misi</h2>
+                        <p className="text-justify indent-8 md:text-2xl">
+                            Memberikan pelayanan dan fasilitas terbaik untuk mempersiapkan tenaga kerja professional untuk dalam dan luar negeri.
                         </p>
                     </div>
                 </div>
@@ -229,7 +242,7 @@ export default function TentangKami() {
                             &#129095;
                         </div>
                         <figure>
-                            <img src={Logo} alt="" className="mb-2" />
+                            <img src={Logo} alt="Logo LPK Yaruki" className="mb-2" />
                         </figure>
                     </div>
                 </div></div >
