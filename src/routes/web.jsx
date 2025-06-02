@@ -8,6 +8,7 @@ import NotFound from "../pages/NotFound";
 import ProgramKami from "../pages/Program-kami";
 
 import TentangKami from "../pages/Tentang-kami";
+import Artikel from "../pages/artikel";
 
 const routes = [
   {
@@ -48,6 +49,11 @@ const routes = [
   {
     path: "/nihon-go-gakkou",
     element: <NihonGoGakkou />,
+    name: "Nihon Go Gakkou",
+  },
+  {
+    path: "/artikel",
+    element: <Artikel />,
     name: "Nihon Go Gakkou",
   },
   {

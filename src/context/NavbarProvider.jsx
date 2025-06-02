@@ -17,6 +17,10 @@ const navbarLinks = [
         path: "/lowongan-kerja",
         name: "Lowongan kerja",
     },
+    {
+        path: "/artikel",
+        name: "Artikel",
+    },
 ];
 
 export const NavbarProvider = ({ children }) => {

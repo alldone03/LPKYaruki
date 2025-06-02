@@ -23,7 +23,7 @@ export default function Navbar() {
   const { navbarLinks } = useNavbar();
 
   return (
-    <>
+    <nav>
       <div
         className={`navbar fixed top-0 right-0 left-0 z-50 bg-white shadow-sm transition-all duration-300 ${showNavbar ? "opacity-100 md:hidden" : "pointer-events-none opacity-0"
           }`}
@@ -114,6 +114,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-    </>
+    </nav>
   );
 }
