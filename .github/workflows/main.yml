@@ -18,9 +18,8 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '20.17.0'
-    - name: Buat file .env dari Secrets
+    - name: Generate .env from secrets
       run: |
-        echo "API_URL=${{ secrets.API_URL }}" >> .env
         echo "FTP_HOST=${{ secrets.FTP_HOST }}" >> .env
         echo "FTP_USER=${{ secrets.FTP_USER }}" >> .env
         echo "FTP_PASS=${{ secrets.FTP_PASS }}" >> .env
