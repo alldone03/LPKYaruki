@@ -13,6 +13,9 @@ jobs:
     steps:
     - name: Checkout kode
       uses: actions/checkout@v3
+    - name: Cek isi direktori
+      working-directory: ./LPKYaruki
+      run: ls -la
 
     - name: Setup Node.js
       uses: actions/setup-node@v4
