@@ -1,0 +1,50 @@
+name: Build and Deploy via FTP
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-push-upload:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout kode
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+
+    - name: Install dependencies
+      run: yarn install
+
+    - name: Build project
+      run: yarn build
+
+    - name: Simpan hasil build
+      run: |
+        mkdir deploy
+        cp -r dist/* deploy/
+
+    - name: Checkout branch deployment
+      run: |
+        git config --global user.name 'github-actions'
+        git config --global user.email 'actions@github.com'
+        git checkout deployment || git checkout -b deployment
+        git rm -r * || true
+        cp -r deploy/* .
+        git add .
+        git commit -m "🚀 Auto update hasil build dari main" || echo "No changes"
+        git push origin deployment
+
+    - name: Upload ke FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_HOST }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./deploy
+        server-dir: ${{ secrets.FTP_TARGET_DIR }}
