@@ -1,5 +1,4 @@
 import os
-import subprocess
 from ftplib import FTP
 from dotenv import load_dotenv
 
@@ -43,18 +42,14 @@ def main():
     ftp = FTP(FTP_HOST)
     ftp.login(FTP_USER, FTP_PASS)
     ftp.cwd(FTP_TARGET_DIR)
+    
+    
 
     print("🚀 Mulai upload ke server...")
     upload_folder(ftp, "dist", FTP_TARGET_DIR)
 
     ftp.quit()
     print("✅ Selesai deploy via FTP!")
-
-    print("📤 Push ke repository Git...")
-    subprocess.run(["git", "add", "."], check=True)
-    subprocess.run(["git", "commit", "-m", "chore: auto-commit after deploy"], check=True)
-    subprocess.run(["git", "push"], check=True)
-    print("✅ Selesai push ke Git!")
 
 if __name__ == "__main__":
     main()
