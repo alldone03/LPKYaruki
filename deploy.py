@@ -9,6 +9,8 @@ FTP_USER = os.getenv("FTP_USER")
 FTP_PASS = os.getenv("FTP_PASS")
 FTP_TARGET_DIR = os.getenv("FTP_TARGET_DIR")
 
+print(FTP_HOST, FTP_USER, FTP_PASS, FTP_TARGET_DIR)
+
 # Fungsi untuk upload satu file ke FTP
 def upload_file(ftp, filepath, target_dir):
     with open(filepath, "rb") as file:

@@ -6,7 +6,6 @@ import TokuteiGinou from "../pages/program/tokutei-ginou";
 import LowonganKerja from "../pages/lowongan-kerja";
 import NotFound from "../pages/NotFound";
 import ProgramKami from "../pages/Program-kami";
-
 import TentangKami from "../pages/Tentang-kami";
 
 const routes = [
