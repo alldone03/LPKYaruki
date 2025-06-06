@@ -23,62 +23,51 @@ export default function Footer() {
             WA Admin
           </button></a>
       </div>
-      <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
-        <aside>
-          <Link to={window.location.origin} >
-            <img src={Logo} alt="Logo" className="h-24 rounded-sm" />
-          </Link>
-          <div >
-            <div className="text-3xl font-bold">LPK Yaruki</div>
-            <br />
-            <div className="text-lg">
-
+      <footer className="bg-neutral text-neutral-content p-10">
+        <div className="max-w-7xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-10">
+          <div>
+            <Link to={window.location.origin}>
+              <img src={Logo} alt="Logo LPK Yaruki" className="h-24 rounded-sm" />
+            </Link>
+            <h2 className="text-3xl font-bold mt-4">LPK Yaruki</h2>
+            <p className="text-lg mt-2">
               "Share Value, Membangun Manusia, Membangun Bangsa Indonesia"
-            </div>
-            <br />
-            <nav className="flex flex-col gap-2 mt-2">
-
-              <h6 className="footer-title text-xl">Menu</h6>
-
-              {navbarLinks.map((link, index) => (
-
-                <Link
-                  key={index}
-                  to={link.path}
-                  className="text-xl link link-hover"
-                >
-                  {link.name}
-                </Link>
-
-              ))}
-
-            </nav>
-            <br />
-            <br />
-            <div className="text-md">
-              Jl Merak Raya H1 No. 134 Jababeka II, Desa Mekarmukti, Kecamatan
-              Cikarang Utara, Kabupaten Bekasi, Jawa Barat
-            </div>
-            <br />
-            <div className="text-xl flex flex-col gap-2">
-              <a href="https://wa.me/+62811918538" >+62811918538 (Hasbian)</a>
-              <a href="mailto:admin@yarukid.com">admin@yarukid.com</a>
-              <Link
-                to={window.location.origin}
-                className="text-blue-500 hover:underline"
-              >
-                yarukid.com
-              </Link>
-            </div>
-            <br />
-            {/* jam kerja */}
-            <div className="text-md">
-              Senin - Sabtu : 08.00 - 17.00
-              <br />
-            </div>
+            </p>
           </div>
-        </aside>
 
+          <nav>
+            <h3 className="text-xl font-semibold mb-2">Menu</h3>
+            <ul className="flex flex-col gap-2">
+              {navbarLinks.map((link, index) => (
+                <li key={index}>
+                  <Link to={link.path} className="text-xl link link-hover">
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <address className="not-italic text-md">
+            <h3 className="text-xl font-semibold mb-2">Kontak</h3>
+            <p>
+              Jl Merak Raya H1 No. 134, Jababeka II, Desa Mekarmukti, Kec. Cikarang Utara,
+              Kab. Bekasi, Jawa Barat
+            </p>
+            <p className="mt-2">
+              <a href="https://wa.me/+62811918538" rel="noopener noreferrer" target="_blank">
+                +62811918538 (Hasbian)
+              </a>
+              <br />
+              <a href="mailto:admin@yarukid.com">admin@yarukid.com</a>
+              <br />
+              <a href="https://yarukid.com" rel="noopener noreferrer" target="_blank">
+                yarukid.com
+              </a>
+            </p>
+            <p className="mt-2">Jam Operasional: Senin - Sabtu, 08.00 - 17.00</p>
+          </address>
+        </div>
       </footer>
     </>
   );
