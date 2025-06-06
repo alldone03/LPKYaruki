@@ -13,7 +13,8 @@ export default function LowonganKerja() {
 
     useEffect(() => {
         fetchData();
-    });
+    }, []);
+
     return (<>
         <Navbar />
         {/* Kaizen SEO */}
@@ -23,8 +24,6 @@ export default function LowonganKerja() {
         <meta name="description" content="LPK Yaruki Solusi Indonesia adalah lembaga pelatihan bahasa Jepang dan pengiriman tenaga kerja ke Jepang. Tersedia program Magang, SSW, Engineer, hingga Kuliah sambil Magang dengan dukungan lengkap dari awal hingga akhir." />
         <meta name="keywords" content="Lowongan Kerja, LPK Yaruki, Kerja ke Jepang, Magang Jepang, SSW, Engineer, Kuliah sambil Magang" />
         <meta name="author" content="LPK Yaruki Solusi Indonesia" />
-
-
 
         <main className="bg-neutral pt-20">
 

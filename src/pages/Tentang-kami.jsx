@@ -30,7 +30,7 @@ export default function TentangKami() {
                     <div className="h-screen bg-black/50">
                         <div className="md:bg-opacity-50 px-4 pt-72 md:flex md:flex-col md:items-center md:justify-center">
                             <article className="prose lg:prose-xl text-center text-white">
-                                <h1 className="text-5xl font-bold md:text-8xl">Tentang Kami</h1>
+                                <h1 className="text-5xl font-bold md:text-8xl text-white">Tentang Kami</h1>
                                 <p className="indent-8 text-lg md:text-xl">
                                     "Share Value, Membangun Manusia, Membangun Bangsa Indonesia"
                                 </p>
@@ -41,7 +41,7 @@ export default function TentangKami() {
 
                 {/* Section 2: Tentang Perusahaan */}
                 <section className="flex h-screen flex-col items-center pt-20" aria-label="Tentang Perusahaan">
-                    <h2 className="mb-5 text-2xl md:text-4xl font-bold">Tentang Perusahaan</h2>
+                    <h2 className="mb-5 text-2xl md:text-4xl font-bold text-white">Tentang Perusahaan</h2>
                     <p className="px-4 text-justify indent-10 md:px-9 md:text-2xl py-10">
                         PT Yaruki Solusi Indonesia adalah perusahaan yang didirikan oleh para ahli di bidang operational & service excellence, lean practitioner, total productive maintenance, cleaning & maintenance service, dan pengembangan sumber daya manusia.
                     </p>
