@@ -3,12 +3,20 @@ import Navbar from "../Components/Navbar";
 
 import budgetEngineering from "../../assets/magang-kenshusei/buget-engineering.png";
 import KategoriPekerjaanEngineering from "../../assets/magang-kenshusei/kategori-pekerjaan-engineering.png";
+import { Helmet } from "react-helmet";
 
 
 
 export default function Engineering() {
     return (
         <>
+
+            <title>Program Engineering Magang Jepang | LPK Yaruki Solusi Indonesia</title>
+            <meta name="description" content="Program Engineering LPK Yaruki membantu insinyur Indonesia bekerja di Jepang. Persyaratan, fasilitas, estimasi biaya, dan skema pembayaran lengkap di sini." />
+            <meta name="keywords" content="Engineering Jepang, Magang Jepang, LPK Yaruki, Program Insinyur, Kerja di Jepang, SSW, Persyaratan Magang Jepang" />
+            <meta property="og:title" content="Program Engineering Magang Jepang | LPK Yaruki" />
+            <meta property="og:description" content="Informasi lengkap program engineering untuk magang dan kerja di Jepang melalui LPK Yaruki. Cek persyaratan, fasilitas, biaya, dan gaji rata-rata." />
+
             <Navbar />
 
             <main className="pt-20 p-2">
@@ -221,6 +229,41 @@ export default function Engineering() {
                     <img src={KategoriPekerjaanEngineering} alt="Engineering Program" className="w-full h-auto pt-4" />
 
                 </section>
+                {/* <section>
+                    <h2>1-2. Kategori Pekerjaan di Industri Manufaktur</h2>
+                    <h3>Pemesinan dan Pengolahan Logam</h3>
+                    <p>Memahami instruksi pembimbing, atau dengan pertimbangan sendiri bertugas di pekerjaan bagian manufaktur produk material casting atau mesin industry.</p>
+                    <p><strong>◇Keterampilan yang Termasuk</strong> <em>(Huruf merah: ditambahkan baru)</em></p>
+                    <table border={1}>
+                        <thead>
+                            <tr>
+                                <th>Keterampilan</th>
+                                <th>Ilustrasi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Pengecoran</td><td><img src="gambar-pengecoran.jpg" alt="Ilustrasi pengecoran logam" /></td></tr>
+                            <tr><td>Penempaan</td><td><img src="gambar-penempaan.jpg" alt="Ilustrasi penempaan logam" /></td></tr>
+                            <tr><td>Pengecoran cetak tekan</td><td><img src="gambar-cetak-tekan.jpg" alt="Ilustrasi pengecoran cetak tekan" /></td></tr>
+                            <tr><td>Permesinan</td><td><img src="gambar-permesinan.jpg" alt="Ilustrasi operator mesin" /></td></tr>
+                            <tr><td>Pengolahan logam stamping</td><td><img src="gambar-logam-stamping.jpg" alt="Ilustrasi pengolahan logam stamping" /></td></tr>
+                            <tr><td>Pekerjaan besi</td><td><img src="gambar-pekerjaan-besi.jpg" alt="Ilustrasi pekerjaan besi" /></td></tr>
+                            <tr><td>Pembentukan logam lembaran di pabrik</td><td><img src="gambar-pembentukan-logam.jpg" alt="Ilustrasi pembentukan logam lembaran" /></td></tr>
+                            <tr><td>Finishing</td><td><img src="gambar-finishing.jpg" alt="Ilustrasi pekerjaan finishing" /></td></tr>
+                            <tr><td>Pemeriksaan mesin</td><td><img src="gambar-pemeriksaan.jpg" alt="Ilustrasi pemeriksaan mesin" /></td></tr>
+                            <tr><td>Pemeliharaan mesin</td><td><img src="gambar-pemeliharaan.jpg" alt="Ilustrasi pemeliharaan mesin" /></td></tr>
+                            <tr><td>Perakitan peralatan listrik</td><td><img src="gambar-perakitan.jpg" alt="Ilustrasi perakitan alat listrik" /></td></tr>
+                            <tr><td>Pencetakan plastik</td><td><img src="gambar-pencetakan-plastik.jpg" alt="Ilustrasi pencetakan plastik" /></td></tr>
+                            <tr><td><span style={{ color: 'red' }}>Cetakan plastik yang diperkuat</span></td><td><img src="gambar-cetakan-perkuat.jpg" alt="Ilustrasi cetakan plastik diperkuat" /></td></tr>
+                            <tr><td><span style={{ color: 'red' }}>Perlakuan panas logam</span></td><td><img src="gambar-perlakuan-panas.jpg" alt="Ilustrasi perlakuan panas logam" /></td></tr>
+                            <tr><td>Pengecatan</td><td><img src="gambar-pengecatan.jpg" alt="Ilustrasi pekerjaan pengecatan" /></td></tr>
+                            <tr><td>Pengelasan</td><td><img src="gambar-pengelasan.jpg" alt="Ilustrasi pengelasan logam" /></td></tr>
+                            <tr><td>Pengemasan industri</td><td><img src="gambar-pengemasan.jpg" alt="Ilustrasi pengemasan industri" /></td></tr>
+                        </tbody>
+                    </table>
+                    <p><small>Kutipan dari pedoman operasional “Kebijakan pengoperasian sistem terkait status izin tinggal Pekerja Berketerampilan Spesifik di bidang manufaktur produk industri” (direvisi 6 September 2024)</small></p>
+                </section> */}
+
 
 
 

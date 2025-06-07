@@ -8,6 +8,18 @@ import budgetTokuteiGinou from "../../assets/magang-kenshusei/buget-tokutei-gino
 export default function TokuteiGinou() {
     return (
         <>
+
+            {/* SEO */}
+
+            <title>Tokutei Ginou - Program Penyaluran Tenaga Kerja ke Jepang | LPK Yaruki Solusi Indonesia</title>
+            <meta name="description" content="Informasi lengkap tentang program Tokutei Ginou, persyaratan, fasilitas, dan estimasi biaya penyaluran tenaga kerja ke Jepang melalui LPK Yaruki." />
+            <meta name="keywords" content="Tokutei Ginou, kerja di Jepang, tenaga kerja, LPK Yaruki, visa keahlian khusus, program Jepang" />
+            <meta property="og:title" content="Tokutei Ginou - Program Penyaluran Tenaga Kerja ke Jepang" />
+            <meta property="og:description" content="Program Tokutei Ginou untuk penyaluran tenaga kerja ke Jepang. Cek persyaratan, fasilitas, dan estimasi biaya di LPK Yaruki." />
+            <meta property="og:type" content="website" />
+
+
+            {/* END SEO */}
             <Navbar />
 
             <main className="pt-20 p-2">

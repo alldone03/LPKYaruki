@@ -6,9 +6,13 @@ import budgetMagangKenshusei from "../../assets/magang-kenshusei/buget-magang-ke
 
 
 
+
 export default function MagangKenshusei() {
     return (
         <>
+            <title>Magang Kenshusei | LPK Yaruki Solusi Indonesia</title>
+            <meta name="description" content="Program magang Kenshusei: pelatihan keterampilan praktis, pemahaman budaya kerja Jepang, kontrak 1-3 tahun. Persyaratan, fasilitas, dan estimasi biaya lengkap di LPK Yaruki." />
+            <meta name="keywords" content="Magang Jepang, Kenshusei, LPK Yaruki, Program Magang, Persyaratan Magang Jepang, Biaya Magang Jepang" />
             <Navbar />
 
             <main className="pt-20 p-2">

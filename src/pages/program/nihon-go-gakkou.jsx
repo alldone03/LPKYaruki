@@ -5,9 +5,22 @@ import budgetEngineering from "../../assets/magang-kenshusei/buget-nihon-go-gakk
 
 
 
+
 export default function NihonGoGakkou() {
     return (
         <>
+            {/* SEO */}
+
+            <title>Nihon Go Gakkou - Program Belajar Bahasa Jepang | LPK Yaruki Solusi Indonesia</title>
+            <meta
+                name="description"
+                content="Program Nihon Go Gakkou dari LPK Yaruki: Belajar bahasa dan budaya Jepang, persiapan kuliah atau karir di Jepang, serta informasi biaya dan persyaratan lengkap."
+            />
+            <meta
+                name="keywords"
+                content="Nihon Go Gakkou, Belajar Bahasa Jepang, LPK Yaruki, Sekolah Jepang, Program Jepang, Persyaratan Jepang, Biaya Sekolah Jepang"
+            />
+            {/* END SEO */}
             <Navbar />
 
             <main className="pt-20 p-2">

@@ -32,22 +32,22 @@ const routes = [
     name: "Lowongan-Kerja",
   },
   {
-    path: "/magang-kenshusei",
+    path: "/program-kami/magang-kenshusei",
     element: <MagangKenshusei />,
     name: "Magang-Kenshusei",
   },
   {
-    path: "/tokutei-ginou",
+    path: "/program-kami/tokutei-ginou",
     element: <TokuteiGinou />,
     name: "Tokutei-Ginou",
   },
   {
-    path: "/engineering",
+    path: "/program-kami/engineering",
     element: <Engineering />,
     name: "Engineering",
   },
   {
-    path: "/nihon-go-gakkou",
+    path: "/program-kami/nihon-go-gakkou",
     element: <NihonGoGakkou />,
     name: "Nihon Go Gakkou",
   },

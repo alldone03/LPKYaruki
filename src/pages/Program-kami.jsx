@@ -47,6 +47,10 @@ export default function ProgramKami() {
         <>
             <title>Program Kami | LPK Yaruki Solusi Indonesia</title>
             {/* SEO */}
+            <meta name="description" content="Program pelatihan dan penempatan kerja ke Jepang oleh LPK Yaruki Solusi Indonesia. Fasilitas lengkap, tahapan pelatihan, pilihan program kerja, dan bidang pekerjaan tersedia." />
+            <meta name="keywords" content="LPK Yaruki, pelatihan Jepang, magang Jepang, kerja di Jepang, program kerja Jepang, SSW, Tokutei Ginou, engineering, Nihon Go Gakkou, bidang pekerjaan Jepang" />
+            <meta name="author" content="LPK Yaruki Solusi Indonesia" />
+            <link rel="canonical" href="https://yaruki.co.id/program-kami" />
             {/* END SEO */}
             <Navbar />
             {/* Section 1 */}

@@ -7,18 +7,30 @@ import checklist from "../assets/checklist.png";
 
 
 import { Link } from "react-router";
+import { Helmet } from "react-helmet-async";
 
-import GajiBiayaHidupDiJepang from "../../src/assets/magang-kenshusei/gaji-biaya-hidup-dijepang.png";
+
 
 export default function Beranda() {
 
     return (
         <>
-            {/* Kaizen SEO */}
+            {/*  SEO */}
+
+
             <title>Kerja ke Jepang | LPK Yaruki Solusi Indonesia</title>
             <meta name="robots" content="index, follow" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <meta name="description" content="LPK Yaruki Solusi Indonesia adalah lembaga pelatihan bahasa Jepang dan pengiriman tenaga kerja ke Jepang. Tersedia program Magang, SSW, Engineer, hingga Kuliah sambil Magang dengan dukungan lengkap dari awal hingga akhir." />
+            <meta
+                name="description"
+                content="LPK Yaruki Solusi Indonesia adalah lembaga pelatihan bahasa Jepang dan pengiriman tenaga kerja ke Jepang. Tersedia program Magang, SSW, Engineer, hingga Kuliah sambil Magang dengan dukungan lengkap dari awal hingga akhir."
+            />
+            <meta property="og:title" content="Kerja ke Jepang | LPK Yaruki Solusi Indonesia" />
+            <meta property="og:description" content="LPK Yaruki Solusi Indonesia adalah lembaga pelatihan bahasa Jepang dan pengiriman tenaga kerja ke Jepang. Tersedia program Magang, SSW, Engineer, hingga Kuliah sambil Magang dengan dukungan lengkap dari awal hingga akhir." />
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="https://yarukid.com/" />
+            <link rel="canonical" href="https://yarukid.com/" />
+
 
             {/* // center phone */}
             <Navbar />
@@ -59,37 +71,37 @@ export default function Beranda() {
                         LPK Yaruki Solusi Indonesia adalah lembaga resmi pengirim tenaga kerja ke Jepang yang berkomitmen membangun masa depan anak bangsa. Kami menghadirkan berbagai program unggulan seperti:
                     </p>
 
-                    <div className="grid gap-6">
+                    <div className="grid gap-6 md:flex">
                         {[
                             {
                                 title: "Magang (Kenshusei)",
                                 desc: "Program pelatihan keterampilan kerja dan budaya Jepang selama 1–3 tahun.",
-                                link: "/magang-kenshusei",
+                                link: "/program-kami/magang-kenshusei",
                             },
                             {
                                 title: "Tokutei Ginou",
                                 desc: "Program kerja dengan visa keahlian khusus di bidang tertentu seperti perhotelan, perawatan lansia, dan konstruksi.",
-                                link: "/tokutei-ginou",
+                                link: "/program-kami/tokutei-ginou",
                             },
                             {
                                 title: "Engineering",
                                 desc: "Bekerja sebagai tenaga ahli (engineer) Indonesia di perusahaan Jepang.",
-                                link: "/engineering",
+                                link: "/program-kami/engineering",
                             },
                             {
                                 title: "Kuliah Sambil Magang (Nihon Go Gakkou)",
                                 desc: "Program belajar bahasa Jepang sambil bekerja, dengan peluang melanjutkan kuliah dan bekerja di Jepang.",
-                                link: "/nihon-go-gakkou",
+                                link: "/program-kami/nihon-go-gakkou",
                             },
                         ].map((program, idx) => (
-                            <div key={idx} className="card bg-base-100 shadow-md p-4">
+                            <div key={idx} className="card bg-base-100 shadow-md p-4 md:w-56 md:flex justify-between">
                                 <h3 className="text-xl font-semibold flex items-center gap-2">
                                     <img src={checklist} alt={`Ikon program ${program.title}`} className="w-6" loading="lazy" />
                                     {program.title}
                                 </h3>
                                 <p className="mt-2 indent-8 text-justify">{program.desc}</p>
                                 <Link to={program.link} className="btn btn-primary mt-4" aria-label={`Pelajari tentang ${program.title}`}>
-                                    Pelajari Lebih Lanjut
+                                    Pelajari Lebih Lanjut &gt;&gt;
                                 </Link>
                             </div>
                         ))}
@@ -113,16 +125,56 @@ export default function Beranda() {
                 </section>
 
                 {/* Gaji dan Biaya Hidup */}
-                <section className="p-4 max-w-5xl mx-auto">
-                    <h2 className="text-2xl md:text-3xl font-bold mb-4">Gaji dan Biaya Hidup di Jepang</h2>
-                    <img
-                        src={GajiBiayaHidupDiJepang}
-                        alt="Informasi Gaji dan Biaya Hidup di Jepang"
-                        className="w-full rounded shadow-md"
-                        loading="lazy"
-                    />
+                <section className="p-4 max-w-5xl mx-auto" id="gaji-biaya-hidup-jepang">
+
+                    <h2 className="text-3xl font-bold">Gaji dan Biaya Hidup di Jepang</h2>
+                    <p className="text-justify">Berikut perbandingan biaya hidup dan potensi penghasilan dari program <strong>magang</strong>, <strong>Tokutei Ginou</strong>, <strong>visa engineering</strong>, dan <strong>pekerjaan paruh waktu</strong> di Jepang.</p>
+                    <br />
+                    <section>
+                        <h3>1. Program Magang</h3>
+                        <ul>
+                            <li><strong>Gaji:</strong> ¥80,000 – ¥120,000/bulan</li>
+                            <li><strong>Biaya hidup:</strong> ¥60,000 – ¥80,000/bulan (termasuk tempat tinggal)</li>
+                            <li><strong>Alokasi:</strong> makan, transportasi, hiburan</li>
+                        </ul>
+                    </section>
+                    <br />
+                    <section >
+                        <h3>2. Tokutei Ginou</h3>
+                        <ul>
+                            <li><strong>Gaji:</strong> ¥200,000 – ¥250,000/bulan</li>
+                            <li><strong>Biaya hidup:</strong> ¥80,000 – ¥120,000/bulan</li>
+                            <li><strong>Catatan:</strong> Peluang menabung tinggi</li>
+                        </ul>
+                    </section>
+                    <br />
+                    <section >
+                        <h3>3. Visa Engineering</h3>
+                        <ul>
+                            <li><strong>Gaji:</strong> ¥250,000 – ¥400,000+/bulan (tergantung pengalaman)</li>
+                            <li><strong>Biaya hidup:</strong> ¥100,000 – ¥150,000/bulan</li>
+                            <li><strong>Fasilitas:</strong> Asuransi &amp; tunjangan</li>
+                        </ul>
+                    </section>
+                    <br />
+                    <section >
+                        <h3>4. Pekerjaan Paruh Waktu (Part-time)</h3>
+                        <ul>
+                            <li><strong>Upah minimum:</strong>
+                                <ul>
+                                    <li>Tokyo: ¥1,113/jam</li>
+                                    <li>Osaka: ¥1,064/jam</li>
+                                </ul>
+                            </li>
+                            <li><strong>Batas kerja:</strong> 28 jam/minggu (untuk pelajar asing)</li>
+                        </ul>
+                    </section>
+                    <br />
+                    <p className="text-justify"><em>Dengan perencanaan keuangan yang baik dan gaya hidup hemat, Anda dapat mengoptimalkan penghasilan dan mencapai tujuan finansial Anda di Jepang.</em></p>
+
+
                 </section>
-            </main>
+            </main >
             <Footer />
         </>
     );

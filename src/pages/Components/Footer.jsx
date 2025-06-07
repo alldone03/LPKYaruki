@@ -37,14 +37,29 @@ export default function Footer() {
 
           <nav>
             <h3 className="text-xl font-semibold mb-2">Menu</h3>
-            <ul className="flex flex-col gap-2">
-              {navbarLinks.map((link, index) => (
-                <li key={index}>
-                  <Link to={link.path} className="text-xl link link-hover">
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
+            <ul className="flex flex-col gap-2 list-none">
+              {navbarLinks.map((link, index) =>
+                link.children ? (
+                  <li key={index}>
+                    <div className="text-xl font-semibold">{link.name}</div>
+                    <ul className="pl-4 flex flex-col gap-1 list-none">
+                      {link.children.map((child, childIndex) => (
+                        <li key={childIndex}>
+                          <Link to={child.path} className="link link-hover">
+                            {child.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                ) : (
+                  <li key={index}>
+                    <Link to={link.path} className="text-xl link link-hover">
+                      {link.name}
+                    </Link>
+                  </li>
+                )
+              )}
             </ul>
           </nav>
 

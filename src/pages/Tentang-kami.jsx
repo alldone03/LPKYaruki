@@ -16,6 +16,14 @@ import goal3 from "../assets/tentang-kami/goal3.png";
 export default function TentangKami() {
     return (
         <>
+
+
+            <meta charSet="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <meta name="description" content="Tentang PT Yaruki Solusi Indonesia: layanan maintenance, people development, pelatihan bahasa Jepang, visi misi, tujuan, dan capaian perusahaan." />
+            <meta name="keywords" content="LPK Yaruki, PT Yaruki Solusi Indonesia, Maintenance, People Development, Pelatihan Bahasa Jepang, Visi Misi, Tujuan Perusahaan" />
+            <meta name="author" content="PT Yaruki Solusi Indonesia" />
+
             <title>Tentang Kami | LPK Yaruki Solusi Indonesia</title>
             {/* // center phone */}
             <Navbar />
