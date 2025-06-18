@@ -5,6 +5,8 @@ import Navbar from "./Components/Navbar";
 import Picture1 from "../assets/program-kami/Picture1.png";
 import Picture2 from "../assets/program-kami/Picture2.png";
 import Picture3 from "../assets/program-kami/Picture3.png";
+import checklist from "../assets/checklist.png";
+import { Link } from "react-router";
 
 export default function ProgramKami() {
 
@@ -98,7 +100,7 @@ export default function ProgramKami() {
                                 <div className="flex flex-col gap-2">
                                     <div className="font-bold text-lg text-center">Kursus Bahasa Jepang</div>
                                     <div className="text-justify indent-8">
-                                        Target lulus JLPT N5 (150 jam) atau N4 (300 jam) setara 3-4 bulan pembelajaran intensif.
+                                        Lembaga kami memberikan program kursus bahasa Jepang dengan target lulus JLPT N5 [150 jam] atau N4 / JFT A2 [300 jam] setara 3-4 bulan pembelajaran.
                                     </div>
                                 </div>
                             </li>
@@ -106,7 +108,7 @@ export default function ProgramKami() {
                                 <div className="flex flex-col gap-2">
                                     <div className="font-bold text-lg text-center">Pelatihan Skill</div>
                                     <div className="text-justify indent-8">
-                                        Pelatihan pengelasan, perawatan mesin, ERP, dan keterampilan kerja dasar lainnya.
+                                        Dalam naungan PT Yaruki Solusi Indonesia, kami memberikan pelatihan keterampilan seperti pengelasan, perawatan mesin, sistem ERP dan ketrampilan lainnya bagi pemula untuk meningkatkan skill.
                                     </div>
                                 </div>
                             </li>
@@ -114,7 +116,8 @@ export default function ProgramKami() {
                                 <div className="flex flex-col gap-2">
                                     <div className="font-bold text-lg text-center">Penempatan Kerja</div>
                                     <div className="text-justify indent-8">
-                                        Penyaluran ke perusahaan di Jepang maupun Indonesia sesuai dengan sertifikasi bahasa dan keahlian.
+                                        Siswa yang memiliki sertifikat keahlian khusus dan sertifikat bahasa Jepang dapat kami salurkan sebagai karyawan di Perusahaan yang berada di Indonesia dan Jepang dengan menggunakan visa khusus pekerja asing (Magang,SSW/Tokutei Ginou & Engineer).
+
                                     </div>
                                 </div>
                             </li>
@@ -129,12 +132,41 @@ export default function ProgramKami() {
                             <div className="card-body">
                                 <h2 className="text-3xl font-bold">Pilihan Program Kerja di Jepang</h2>
                                 <ul className="mt-6 flex flex-col gap-2 text-lg">
-                                    {["Magang (Jishusei)", "SSW/TG (Tokutei Ginou)", "Engineering", "Nihon Go Gakkou (Kuliah + Kerja Part-time)"].map((item, i) => (
-                                        <li key={i} className="flex items-center">
-                                            <svg className="size-4 me-2 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                            <span>{item}</span>
-                                        </li>
-                                    ))}
+                                    <div className="grid gap-6 md:grid-cols-2 ">
+                                        {[
+                                            {
+                                                title: "Magang (Kenshusei)",
+                                                desc: "Program pelatihan keterampilan kerja dan budaya Jepang selama 1–3 tahun.",
+                                                link: "/program-kami/magang-kenshusei",
+                                            },
+                                            {
+                                                title: "Tokutei Ginou",
+                                                desc: "Program kerja dengan visa keahlian khusus di bidang tertentu seperti perhotelan, perawatan lansia, dan konstruksi.",
+                                                link: "/program-kami/tokutei-ginou",
+                                            },
+                                            {
+                                                title: "Engineering",
+                                                desc: "Bekerja sebagai tenaga ahli (engineer) Indonesia di perusahaan Jepang.",
+                                                link: "/program-kami/engineering",
+                                            },
+                                            {
+                                                title: "Kuliah Sambil Magang (Nihon Go Gakkou)",
+                                                desc: "Program belajar bahasa Jepang sambil bekerja, dengan peluang melanjutkan kuliah dan bekerja di Jepang.",
+                                                link: "/program-kami/nihon-go-gakkou",
+                                            },
+                                        ].map((program, idx) => (
+                                            <div key={idx} className="card bg-base-100 shadow-md p-4 md:w-56 md:flex justify-between">
+                                                <h3 className="text-xl font-semibold flex items-center gap-2">
+                                                    <img src={checklist} alt={`Ikon program ${program.title}`} className="w-6" loading="lazy" />
+                                                    {program.title}
+                                                </h3>
+                                                <p className="mt-2 indent-8 text-justify">{program.desc}</p>
+                                                <Link to={program.link} className="btn btn-primary mt-4" aria-label={`Pelajari tentang ${program.title}`}>
+                                                    Pelajari Lebih Lanjut &gt;&gt;
+                                                </Link>
+                                            </div>
+                                        ))}
+                                    </div>
                                 </ul>
                             </div>
                         </div>
@@ -151,31 +183,31 @@ export default function ProgramKami() {
                     </div>
                 </section>
 
-                {/* Informasi Magang */}
-                <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-                    <div className="card w-full bg-info text-info-content shadow-sm">
-                        <div className="card-body">
-                            <h2 className="text-3xl font-bold">Informasi Magang (Kenshusei)</h2>
-                            <p className="mt-6 text-lg">
-                                Program pelatihan kerja praktis di Jepang dengan durasi kontrak 1-3 tahun. Fokus pada pengembangan keterampilan teknis dan pemahaman budaya kerja Jepang.
-                            </p>
+                {/* Informasi Magang
+                // <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+                //     <div className="card w-full bg-info text-info-content shadow-sm">
+                //         <div className="card-body">
+                //             <h2 className="text-3xl font-bold">Informasi Magang (Kenshusei)</h2>
+                //             <p className="mt-6 text-lg">
+                //                 Program pelatihan kerja praktis di Jepang dengan durasi kontrak 1-3 tahun. Fokus pada pengembangan keterampilan teknis dan pemahaman budaya kerja Jepang.
+                //             </p>
 
-                            <h3 className="font-bold text-2xl mt-6">Persyaratan Peserta Magang</h3>
-                            <ul className="mt-2 flex flex-col gap-2 text-lg">
-                                {PersyaratanMagang.map((item, index) => (
-                                    <li key={index}>{index + 1}. {item}</li>
-                                ))}
-                            </ul>
+                //             <h3 className="font-bold text-2xl mt-6">Persyaratan Peserta Magang</h3>
+                //             <ul className="mt-2 flex flex-col gap-2 text-lg">
+                //                 {PersyaratanMagang.map((item, index) => (
+                //                     <li key={index}>{index + 1}. {item}</li>
+                //                 ))}
+                //             </ul>
 
-                            <h3 className="font-bold text-2xl mt-6">Fasilitas dari Perusahaan</h3>
-                            <ul className="mt-2 flex flex-col gap-2 text-lg">
-                                {FasilitasMagang.map((item, index) => (
-                                    <li key={index}>{index + 1}. {item}</li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
-                </section>
+                //             <h3 className="font-bold text-2xl mt-6">Fasilitas dari Perusahaan</h3>
+                //             <ul className="mt-2 flex flex-col gap-2 text-lg">
+                //                 {FasilitasMagang.map((item, index) => (
+                //                     <li key={index}>{index + 1}. {item}</li>
+                //                 ))}
+                //             </ul>
+                //         </div>
+                //     </div>
+                // </section> */}
             </main>
 
 

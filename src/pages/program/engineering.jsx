@@ -3,7 +3,6 @@ import Navbar from "../Components/Navbar";
 
 import budgetEngineering from "../../assets/magang-kenshusei/buget-engineering.png";
 import KategoriPekerjaanEngineering from "../../assets/magang-kenshusei/kategori-pekerjaan-engineering.png";
-import { Helmet } from "react-helmet";
 
 
 

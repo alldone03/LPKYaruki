@@ -51,9 +51,9 @@ export default function TentangKami() {
                 <section className="flex h-screen flex-col items-center pt-20" aria-label="Tentang Perusahaan">
                     <h2 className="mb-5 text-2xl md:text-4xl font-bold text-white">Tentang Perusahaan</h2>
                     <p className="px-4 text-justify indent-10 md:px-9 md:text-2xl py-10">
-                        PT Yaruki Solusi Indonesia adalah perusahaan yang didirikan oleh para ahli di bidang operational & service excellence, lean practitioner, total productive maintenance, cleaning & maintenance service, dan pengembangan sumber daya manusia.
+                        LPK Yaruki Indonesia berfokus terhadap training bahasa Jepang untuk penyaluran tenaga kerja Indonesia di berbagai bidang melalui program pelatihan khusus seperti mekanik mobil, body repair, manufacturing [maintenance,engineering,IT] dan lain-lain.
                     </p>
-                    <table className="mx-2 my-4 w-full md:w-auto md:px-7 table-auto border border-gray-300 text-base md:text-2xl">
+                    <table className="mx-2 my-4 w-full md:w-auto md:px-7 table-auto   text-base md:text-2xl">
                         <tbody>
                             <tr>
                                 <th className="w-1/3 px-4 py-2 font-bold text-left">Nama Perusahaan</th>
@@ -86,40 +86,41 @@ export default function TentangKami() {
                 </section>
 
                 {/* Section 3: Visi & Misi */}
-                <section className="flex h-screen flex-col items-center border-t-4 pt-20" aria-label="Visi dan Misi Perusahaan">
-                    <h2 className="mb-5 text-2xl md:text-4xl font-bold">Visi & Misi</h2>
-                    <p className="px-4 text-justify indent-10 md:px-9 md:text-2xl">
-                        Memberikan pelayanan dan fasilitas terbaik untuk mempersiapkan tenaga kerja profesional untuk dalam dan luar negeri.
-                    </p>
+                <section className="flex h-screen flex-col items-center  pt-20" aria-label="Visi dan Misi Perusahaan">
+
 
                     <div className="card bg-primary text-primary-content w-96 md:w-1/2 my-5">
                         <div className="card-body">
-                            <h3 className="text-center text-2xl md:text-4xl font-bold">Visi</h3>
+                            <h2 className="text-center text-2xl md:text-4xl font-bold">Visi</h2>
                             <ul className="list-disc list-inside text-justify indent-4 md:text-2xl mt-3">
-                                <li>Menjadi mitra terbaik bagi perusahaan dan individu dalam:</li>
+                                <ul>
+
+                                    <li>Menjadi mitra terbaik bagi perusahaan dan individu dalam:</li>
+                                </ul>
                                 <li>Pelatihan bahasa asing dan skill terkini</li>
                                 <li>Penyedia tenaga kerja terampil di dalam & luar negeri</li>
                                 <li>Partner excellent operations (Lean) di bidang:</li>
-                                <ul className="list-circle list-inside ml-6">
-                                    <li>Manufacturing: Total Productive Maintenance (mesin, equipment & building), Welding, Sistem Integrasi ERP, dll</li>
-                                    <li>Non Manufacturing: IT, Finance, Logistics, Services, dll</li>
-                                </ul>
+
+                                <li>Manufacturing: Total Productive Maintenance (mesin, equipment & building), Welding, Sistem Integrasi ERP, dll</li>
+                                <li>Non Manufacturing: IT, Finance, Logistics, Services, dll</li>
+
                             </ul>
                         </div>
                     </div>
 
                     <div className="card bg-primary text-primary-content w-96 md:w-1/2">
                         <div className="card-body">
-                            <h3 className="text-center text-2xl md:text-4xl font-bold">Misi</h3>
+                            <h2 className="text-center text-2xl md:text-4xl font-bold">Misi</h2>
                             <p className="text-justify indent-8 md:text-2xl mt-3">
-                                Memberikan pelayanan dan fasilitas terbaik untuk mempersiapkan tenaga kerja profesional untuk dalam dan luar negeri.
+                                Memberikan pelayanan dan fasilitas terbaik untuk mempersiapkan tenaga kerja professional untuk dalam dan luar negeri.
+
                             </p>
                         </div>
                     </div>
                 </section>
 
                 {/* Section 4: Layanan Kami */}
-                <section className="flex flex-col items-center border-t-4 pt-20" aria-label="Layanan Perusahaan">
+                <section className="flex flex-col items-center  pt-20" aria-label="Layanan Perusahaan">
                     <h2 className="mb-5 text-2xl font-bold">Layanan Yang Kami Tawarkan</h2>
                     <div className="card bg-base-100 my-4 w-screen shadow-sm md:my-0 md:w-3xl">
                         <div className="card-body">

@@ -7,7 +7,7 @@ import checklist from "../assets/checklist.png";
 
 
 import { Link } from "react-router";
-import { Helmet } from "react-helmet-async";
+
 
 
 
@@ -23,7 +23,7 @@ export default function Beranda() {
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta
                 name="description"
-                content="LPK Yaruki Solusi Indonesia adalah lembaga pelatihan bahasa Jepang dan pengiriman tenaga kerja ke Jepang. Tersedia program Magang, SSW, Engineer, hingga Kuliah sambil Magang dengan dukungan lengkap dari awal hingga akhir."
+                content="LPK Yaruki Indonesia berfokus terhadap training bahasa Jepang untuk penyaluran tenaga kerja Indonesia di berbagai bidang melalui program pelatihan khusus seperti mekanik mobil, body repair, manufacturing [maintenance,engineering,IT] dan lain-lain."
             />
             <meta property="og:title" content="Kerja ke Jepang | LPK Yaruki Solusi Indonesia" />
             <meta property="og:description" content="LPK Yaruki Solusi Indonesia adalah lembaga pelatihan bahasa Jepang dan pengiriman tenaga kerja ke Jepang. Tersedia program Magang, SSW, Engineer, hingga Kuliah sambil Magang dengan dukungan lengkap dari awal hingga akhir." />
