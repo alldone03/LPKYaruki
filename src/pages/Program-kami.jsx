@@ -209,9 +209,6 @@ export default function ProgramKami() {
                 //     </div>
                 // </section> */}
             </main>
-
-
-
             <Footer />
         </>
     );

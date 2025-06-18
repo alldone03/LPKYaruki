@@ -11,7 +11,9 @@ export default function MagangKenshusei() {
     return (
         <>
             <title>Magang Kenshusei | LPK Yaruki Solusi Indonesia</title>
-            <meta name="description" content="Program magang Kenshusei: pelatihan keterampilan praktis, pemahaman budaya kerja Jepang, kontrak 1-3 tahun. Persyaratan, fasilitas, dan estimasi biaya lengkap di LPK Yaruki." />
+            <meta name="description" content="Program magang Kenshusei: Program pelatihan keterampilan praktis dan pemahaman budaya kerja Jepang. 
+Kontrak Program magang 3- 5 tahun
+. Persyaratan, fasilitas, dan estimasi biaya lengkap di LPK Yaruki." />
             <meta name="keywords" content="Magang Jepang, Kenshusei, LPK Yaruki, Program Magang, Persyaratan Magang Jepang, Biaya Magang Jepang" />
             <Navbar />
 
@@ -20,7 +22,9 @@ export default function MagangKenshusei() {
                     <h1 className="text-3xl text-center pt-4">Magang ?
                         [Kenshusei]
                     </h1>
-                    <p className="text-justify pt-4 indent-8">Program pelatihan keterampilan praktis dan pemahaman budaya kerja Jepang. kontrak Program magang 1- 3 tahun.</p>
+                    <p className="text-justify pt-4 indent-8">Program pelatihan keterampilan praktis dan pemahaman budaya kerja Jepang.
+                        Kontrak Program magang 3- 5 tahun
+                    </p>
                     <h2 className="text-2xl text-center pt-4">
                         Persyaratan
                     </h2>
@@ -39,7 +43,7 @@ export default function MagangKenshusei() {
                     </h2>
                     <ul className="list-disc list-outside pl-8 pt-4 flex flex-col gap-2 ">
                         <li>
-                            Gaji mulai 160.000 Yen atau Rp 17 juta/bln
+                            Gaji mulai 130.000 Yen atau Rp 14 juta/bln
                         </li>
                         <li>
                             Asrama/tempat tinggal
@@ -48,7 +52,7 @@ export default function MagangKenshusei() {
                             Asuransi Kesehatan & keselamatan kerja
                         </li>
                         <li>
-                            Kontrak mulai dari 1-3 tahun dan bisa diperpanjang
+                            Kontrak mulai dari 3-5 tahun dan bisa diperpanjang
                         </li>
                     </ul>
                     <h2 className="text-2xl text-center pt-4">
@@ -57,10 +61,80 @@ export default function MagangKenshusei() {
                     <p>
                         <div className="text-2xl text-center pt-4">
 
-                            Standar Waktu Persiapan 6 Bulan
-                        </div>
-                        <div className="text-2xl text-center pt-4">
-                            <img src={budgetMagangKenshusei} alt="Budget Magang Kenshusei" />
+
+                            <div className="p-4">
+                                <h3 className="text-xl font-bold bg-yellow-300 p-2 inline-block mb-4">
+                                    Standar Waktu Persiapan 6 Bulan
+                                </h3>
+
+                                <div className="overflow-auto">
+                                    <table className="table-auto border-collapse border w-full text-center">
+                                        <thead>
+                                            <tr>
+                                                <th className="border p-2" rowSpan="2">Activities</th>
+                                                <th className="border p-2" colSpan="6">Month</th>
+                                                <th className="border p-2" rowSpan="2">Budget</th>
+                                            </tr>
+                                            <tr>
+                                                {[1, 2, 3, 4, 5, 6].map((m) => (
+                                                    <th key={m} className="border p-2">{m}</th>
+                                                ))}
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {[
+                                                {
+                                                    name: "Learning Japanese [N5]",
+                                                    months: [1, 2],
+                                                    color: "bg-sky-400",
+                                                    budget: "Rp 8,000,000",
+                                                },
+                                                {
+                                                    name: "Pre - Interview",
+                                                    months: [3],
+                                                    color: "bg-lime-400",
+                                                    budget: "Rp 4,000,000",
+                                                },
+                                                {
+                                                    name: "Job Matching",
+                                                    months: [4],
+                                                    color: "bg-orange-300",
+                                                    budget: "Rp 5,000,000",
+                                                },
+                                                {
+                                                    name: "Visa Management",
+                                                    months: [5],
+                                                    color: "bg-red-800 text-white",
+                                                    budget: "Rp 5,000,000",
+                                                },
+                                                {
+                                                    name: "Departure to Japan",
+                                                    months: [6],
+                                                    color: "bg-red-500 text-white",
+                                                    budget: "Rp 11,000,000",
+                                                },
+                                            ].map((act, i) => (
+                                                <tr key={i}>
+                                                    <td className="border p-2 text-left">{act.name}</td>
+                                                    {[1, 2, 3, 4, 5, 6].map((m) => (
+                                                        <td key={m} className={`border p-2 ${act.months.includes(m) ? act.color : ""}`}>
+                                                            {act.months.includes(m) ? "" : ""}
+                                                        </td>
+                                                    ))}
+                                                    <td className="border p-2">{act.budget}</td>
+                                                </tr>
+                                            ))}
+                                            <tr>
+                                                <td colSpan="7" className="border p-2 font-bold text-right">Total</td>
+                                                <td className="border p-2 font-bold">Rp 33,000,000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p className="mt-2 italic text-sm">
+                                        Termasuk: registrasi, modul, seragam, dormitory, passport, MCU, visa, ticket
+                                    </p>
+                                </div>
+                            </div>
                         </div>
 
                     </p>
