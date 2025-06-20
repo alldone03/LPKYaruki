@@ -1,8 +1,7 @@
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 
-import budgetEngineering from "../../assets/magang-kenshusei/buget-engineering.png";
-import KategoriPekerjaanEngineering from "../../assets/magang-kenshusei/kategori-pekerjaan-engineering.png";
+
 
 
 
@@ -19,20 +18,20 @@ export default function Engineering() {
             <Navbar />
 
             <main className="pt-20 p-2">
-                <section>
-                    <h1 className="text-3xl text-center pt-4">Engineering
+                <section className="px-4 py-6 max-w-3xl mx-auto">
+                    <h1 className="text-4xl font-bold mb-4 text-blue-800 text-center">Engineering
                     </h1>
                     <p className="text-justify pt-4  indent-8">Program ini dirancang untuk membantu insinyur Indonesia bekerja di Jepang
                     </p>
 
                 </section>
-                <section>
-                    <h2 className="text-2xl text-center pt-4">
+                <section className="px-4 py-6 max-w-3xl mx-auto">
+                    <h2 className="text-2xl font-bold mb-4 text-blue-800 text-center">
                         Persyaratan
                     </h2>
                     <ul className="list-disc list-outside pl-8 pt-4 flex flex-col gap-2 ">
-                        <li>Laki-Laki atau Perempuan berusia min 18 tahun (disesuaikan dengan kebijakan perusahaan)                        </li>
                         <li>Lulusan D3/S1 atau SMA/SMK Sederajat</li>
+                        <li>Laki-Laki atau Perempuan berusia min 18 tahun (disesuaikan dengan kebijakan perusahaan)</li>
                         <li>Tinggi badan min. 160 cm (pria) dan 150 cm (wanita)</li>
                         <li>Sehat jasmani dan rohani</li>
                         <li>Tidak memiliki tato, tidak memiliki alergi, tidak buta warna</li>
@@ -41,9 +40,9 @@ export default function Engineering() {
                         <li>Lulus Min JLPT N4/JFT A2 [lebih dari N3 diutamakan], Skill & Interview User                        </li>
                     </ul>
                 </section>
-                <section>
+                <section className="px-4 py-6 max-w-3xl mx-auto">
 
-                    <h2 className="text-2xl text-center pt-4">
+                    <h2 className="text-2xl font-bold mb-4 text-blue-800 text-center">
                         Fasilitas dari Perusahaan
                     </h2>
                     <ul className="list-disc list-outside pl-8 pt-4 flex flex-col gap-2 ">
@@ -57,91 +56,133 @@ export default function Engineering() {
                             Asuransi Kesehatan & keselamatan kerja
                         </li>
                         <li>
-                            Kontrak mulai dari 6 bulan sampai 1 tahun dan bisa diperpanjang (dapat bekerja dan tinggal di Jepang selamanya)
+                            Kontrak mulai dari 1 Tahun sampai 5 tahun dan bisa diperpanjang (dapat bekerja dan tinggal di Jepang selamanya)
                         </li>
                     </ul>
                 </section>
-                <section>
+                <section className="px-4 py-6 max-w-3xl mx-auto">
 
-                    <h2 className="text-2xl text-center pt-4">
+                    <h2 className="text-2xl font-bold mb-4 text-blue-800 text-center">
                         ESTIMASI BIAYA
                     </h2>
-                    <p>
-                        <div className="text-2xl text-center pt-4">
+                    <div className="p-4 text-center">
+                        <h2 className="text-xl font-bold text-center bg-yellow-300 p-2 inline-block mb-4">
                             Standar Waktu Persiapan 10 Bulan
-                        </div>
-                        <div className="text-2xl text-center pt-4">
-                            <img src={budgetEngineering} alt="Budget Magang Kenshusei" />
-                        </div>
+                        </h2>
 
-                    </p>
-
-                </section>
-                <section>
-
-                    <h2 className="text-2xl text-center pt-4">
-                        Skema Pembayaran
-                    </h2>
-                    <p>
-                        <div className="text-2xl text-center pt-4">
-                            [SSW/TG case]
-                        </div>
-                        <div className="overflow-x-auto pt-4">
-                            <table className="table w-full">
+                        <div className="overflow-auto">
+                            <table className="table-auto border-collapse border w-full text-center">
                                 <thead>
                                     <tr>
-                                        <th>No.</th>
-                                        <th>Jumlah
-
-
-                                            <br />Pembayaran</th>
-                                        <th>Keterangan</th>
+                                        <th className="border p-2" rowSpan="2">Activities</th>
+                                        <th className="border p-2" colSpan="10">Month</th>
+                                        <th className="border p-2" rowSpan="2">Budget</th>
+                                    </tr>
+                                    <tr>
+                                        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((m) => (
+                                            <th key={m} className="border p-2">{m}</th>
+                                        ))}
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    {[
+                                        {
+                                            name: "Learning Japanese [N3]",
+                                            months: [1, 2, 3, 4, 5, 6],
+                                            color: "bg-sky-400",
+                                            budget: "Rp 20,000,000",
+                                        },
+                                        {
+                                            name: "Pre - Interview",
+                                            months: [7],
+                                            color: "bg-lime-400",
+                                            budget: "Rp 5,000,000",
+                                        },
+                                        {
+                                            name: "Job Matching",
+                                            months: [8],
+                                            color: "bg-orange-300",
+                                            budget: "Rp 10,000,000",
+                                        },
+                                        {
+                                            name: "Visa Management",
+                                            months: [9],
+                                            color: "bg-red-800 text-white",
+                                            budget: "Rp 5,000,000",
+                                        },
+                                        {
+                                            name: "Departure to Japan",
+                                            months: [10],
+                                            color: "bg-red-500 text-white",
+                                            budget: "Rp 11,000,000",
+                                        },
+                                    ].map((act, i) => (
+                                        <tr key={i}>
+                                            <td className="border p-2 text-left">{act.name}</td>
+                                            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((m) => (
+                                                <td key={m} className={`border p-2 ${act.months.includes(m) ? act.color : ""}`}>
+                                                    {act.months.includes(m) ? "" : ""}
+                                                </td>
+                                            ))}
+                                            <td className="border p-2">{act.budget}</td>
+                                        </tr>
+                                    ))}
                                     <tr>
-                                        <td>1.</td>
-                                        <td>35 juta</td>
-                                        <td>Bila pembayaran cash di awal masuk</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2.</td>
-                                        <td>37,5 juta</td>
-                                        <td>Bila pembayaran dicicil minimal 15 juta tiap 2 bulan sampai lunas</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3.</td>
-                                        <td>40 juta</td>
-                                        <td>Bila pembayaran dicicil minimal 5 juta per bulan sampai lunas</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4.</td>
-                                        <td>42,5 juta</td>
-                                        <td>Bila pembayaran di awal 5 juta dan dicicil minimal 2,5 juta per bulan sampai lunas</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5.</td>
-                                        <td>45 juta</td>
-                                        <td>Bila pembayaran 5 juta di awal masuk, tiap ada pembayaran eksternal - biaya sendiri, dan sisa uangnya dibayarkan setelah di Jepang</td>
+                                        <td colSpan="11" className="border p-2 font-bold text-right">Total</td>
+                                        <td className="border p-2 font-bold">Rp 51,000,000</td>
                                     </tr>
                                 </tbody>
                             </table>
-
-
-
+                            <p className="mt-2 italic text-sm">
+                                Termasuk: registrasi, modul, seragam, dormitory, passport, MCU, Visa, Ticket
+                            </p>
                         </div>
-
-                    </p>
+                    </div>
 
                 </section>
-                <section>
+                <section className="px-4 py-6 max-w-3xl mx-auto">
+                    <div>
+                        <h2 className="text-xl font-bold text-blue-700 mb-2">Program SSW/TG</h2>
+                        <article>
+                            <h3 className="font-semibold text-blue-600">✔ Full Payment</h3>
+                            <ol className="list-decimal ml-6 text-gray-800">
+                                <li>
+                                    <strong>37,5 juta</strong> – Bila pembayaran <strong>cash di awal masuk</strong>
+                                </li>
+                            </ol>
+                        </article>
+                        <article className="mt-4">
+                            <h3 className="font-semibold text-blue-600">✔ Cicilan / Dana Talang</h3>
+                            <p className="text-sm text-right text-blue-600 font-semibold">
+                                Dana talang Max : 45jt/siswa
+                            </p>
+                            <ol className="list-decimal ml-6 text-gray-800">
+                                <li>
+                                    <strong>40 juta</strong> – Jika pembayaran dicicil minimal 15 juta tiap 2 bulan sampai lunas
+                                </li>
+                                <li>
+                                    <strong>42,5 juta</strong> – Jika pembayaran dicicil minimal 5 juta per bulan sampai lunas
+                                </li>
+                                <li>
+                                    <strong>45 juta</strong> – Jika pembayaran di awal 5 juta, dan cicilan minimal 2,5 juta per bulan sampai lunas
+                                </li>
+                                <li classname="bg-green-300 rounded-b-md">
+                                    <strong>47,5 juta</strong> – Jika pembayaran di awal 5 juta, tiap ada pembayaran eksternal (biaya sendiri),
+                                    dan <strong>sisa uang dibayarkan setelah di Jepang</strong>
+                                </li>
+                            </ol>
+                        </article>
+                    </div>
 
-                    <h2 className="text-2xl text-center pt-4">
+                </section>
+                {/* <section className="px-4 py-6 max-w-3xl mx-auto">
+
+                    <h2 className="text-2xl font-bold mb-4 text-blue-800 text-center">
                         Survei Badan Layanan Imigrasi Jepang pada 2021, berikut rata-rata gaji sebagai SSW [11 bidang]
 
                     </h2>
                     <p>
-                        <div className="text-2xl text-center pt-4">
+                        <div className="text-2xl font-bold mb-4 text-blue-800 text-center">
 
                         </div>
                         <div className="overflow-x-auto pt-4 p-2">
@@ -222,12 +263,41 @@ export default function Engineering() {
 
                     </p>
 
-                </section>
-                <section>
+                </section> */}
+                {/* <section>
+                    <h1 class="text-2xl font-bold text-blue-800">Kategori Pekerjaan Pemesinan dan Pengolahan Logam</h1>
+                    <p class="mt-2 text-gray-700">
+                        Memahami instruksi pembimbing, atau dengan pertimbangan sendiri bertugas di pekerjaan bagian manufaktur produk material casting atau mesin industry.
+                    </p>
 
-                    <img src={KategoriPekerjaanEngineering} alt="Engineering Program" className="w-full h-auto pt-4" />
+                    <h2 class="text-lg font-semibold mt-4 text-gray-900">
+                        Keterampilan yang Termasuk <span class="text-red-600">(Huruf merah: ditambahkan baru)</span>
+                    </h2>
 
-                </section>
+                    <ul class="grid grid-cols-2 md:grid-cols-3 gap-3 mt-3 text-gray-800 list-disc ml-5">
+                        <li>Pengecoran</li>
+                        <li>Penempaan</li>
+                        <li>Pengecoran cetak tekan</li>
+                        <li>Permesinan</li>
+                        <li>Pengolahan logam stamping</li>
+                        <li>Pekerjaan besi</li>
+                        <li>Pembentukan logam lembaran di pabrik</li>
+                        <li>Finishing</li>
+                        <li>Pemeriksaan mesin</li>
+                        <li>Perakitan peralatan listrik</li>
+                        <li>Pencetakan plastik</li>
+                        <li>Pengecatan</li>
+                        <li>Pengelasan</li>
+                        <li>Pemeliharaan mesin</li>
+                        <li>Pengemasan industri</li>
+                        <li class="text-red-600">Cetakan plastik yang diperkuat</li>
+                        <li class="text-red-600">Perlakuan panas logam</li>
+                    </ul>
+
+                    <p class="mt-4 text-sm italic text-gray-600">
+                        Dikutip dari pedoman operasional “Kebijakan pengoperasian sistem terkait status izin tinggal Pekerja Berketerampilan Spesifik di bidang manufaktur produk industri” (direvisi sebagian pada 6 September 2024)
+                    </p>
+                </section> */}
                 {/* <section>
                     <h2>1-2. Kategori Pekerjaan di Industri Manufaktur</h2>
                     <h3>Pemesinan dan Pengolahan Logam</h3>

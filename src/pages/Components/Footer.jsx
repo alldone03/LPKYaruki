@@ -23,7 +23,7 @@ export default function Footer() {
             WA Admin
           </button></a>
       </div>
-      <footer className="bg-neutral text-neutral-content p-10">
+      <footer className="bg-base text-base-content p-10 outline outline-primary">
         <div className="max-w-7xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-10">
           <div>
             <Link to={window.location.origin}>

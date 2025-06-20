@@ -1,7 +1,7 @@
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 
-import budgetMagangKenshusei from "../../assets/magang-kenshusei/buget-magang-kenshusei.png";
+
 
 
 
@@ -18,16 +18,20 @@ Kontrak Program magang 3- 5 tahun
             <Navbar />
 
             <main className="pt-20 p-2">
-                <section>
-                    <h1 className="text-3xl text-center pt-4">Magang ?
+                <section className="px-4 py-6 max-w-3xl mx-auto">
+                    <h1 className="text-4xl font-bold mb-4 text-blue-800 text-center">Magang ?
                         [Kenshusei]
                     </h1>
                     <p className="text-justify pt-4 indent-8">Program pelatihan keterampilan praktis dan pemahaman budaya kerja Jepang.
                         Kontrak Program magang 3- 5 tahun
                     </p>
-                    <h2 className="text-2xl text-center pt-4">
+                </section>
+                <section className="px-4 py-6 max-w-3xl mx-auto">
+                    <h2 className="text-2xl font-bold mb-4 text-blue-800 text-center">
                         Persyaratan
                     </h2>
+
+
                     <ul className="list-disc list-outside pl-8 pt-4 flex flex-col gap-2 ">
                         <li>Laki-Laki atau Perempuan berusia 18 sampai 28 tahun (usia 28 ke atas sesuai kebijakan perusahaan)</li>
                         <li>Lulusan D3/S1 atau SMA/SMK Sederajat</li>
@@ -38,7 +42,9 @@ Kontrak Program magang 3- 5 tahun
                         <li>Mendapat izin orang tua</li>
                         <li>Lulus JLPT N5 & Interview User</li>
                     </ul>
-                    <h2 className="text-2xl text-center pt-4">
+                </section>
+                <section className="px-4 py-6 max-w-3xl mx-auto">
+                    <h2 className="text-2xl font-bold mb-4 text-blue-800 text-center">
                         Fasilitas dari Perusahaan
                     </h2>
                     <ul className="list-disc list-outside pl-8 pt-4 flex flex-col gap-2 ">
@@ -55,7 +61,10 @@ Kontrak Program magang 3- 5 tahun
                             Kontrak mulai dari 3-5 tahun dan bisa diperpanjang
                         </li>
                     </ul>
-                    <h2 className="text-2xl text-center pt-4">
+                </section>
+                <section className="px-4 py-6 max-w-3xl mx-auto">
+
+                    <h2 className="text-2xl font-bold mb-4 text-blue-800 text-center">
                         ESTIMASI BIAYA
                     </h2>
                     <p>

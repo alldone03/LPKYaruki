@@ -74,23 +74,23 @@ export default function Beranda() {
                     <div className="grid gap-6 md:flex">
                         {[
                             {
-                                title: "Magang (Kenshusei)",
-                                desc: "Program pelatihan keterampilan kerja dan budaya Jepang selama 1–3 tahun.",
+                                title: "Magang [Kenshusei]",
+                                desc: "Program pelatihan keterampilan praktis dan pemahaman budaya kerja Jepang. Kontrak Program magang 3- 5 tahun",
                                 link: "/program-kami/magang-kenshusei",
                             },
                             {
                                 title: "Tokutei Ginou",
-                                desc: "Program kerja dengan visa keahlian khusus di bidang tertentu seperti perhotelan, perawatan lansia, dan konstruksi.",
+                                desc: "Tokutei ginou merupakan program penyaluran tenaga kerja ke Jepang dengan menggunakan visa pekerja yang memiliki keahlian khusus di bidang tertentu.",
                                 link: "/program-kami/tokutei-ginou",
                             },
                             {
                                 title: "Engineering",
-                                desc: "Bekerja sebagai tenaga ahli (engineer) Indonesia di perusahaan Jepang.",
+                                desc: "Program ini dirancang untuk membantu insinyur Indonesia bekerja di Jepang",
                                 link: "/program-kami/engineering",
                             },
                             {
                                 title: "Kuliah Sambil Magang (Nihon Go Gakkou)",
-                                desc: "Program belajar bahasa Jepang sambil bekerja, dengan peluang melanjutkan kuliah dan bekerja di Jepang.",
+                                desc: "Program Belajar Bahasa dan budaya Jepang. Setelah lulus program,Siswa Bisa melanjutkan Kuliah kejuruan atau langsung Berkarir di Perusahaan di Jepang.",
                                 link: "/program-kami/nihon-go-gakkou",
                             },
                         ].map((program, idx) => (

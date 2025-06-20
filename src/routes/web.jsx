@@ -51,11 +51,11 @@ const routes = [
     element: <NihonGoGakkou />,
     name: "Nihon Go Gakkou",
   },
-  {
-    path: "/artikel",
-    element: <Artikel />,
-    name: "Nihon Go Gakkou",
-  },
+  // {
+  //   path: "/artikel",
+  //   element: <Artikel />,
+  //   name: "Nihon Go Gakkou",
+  // },
   {
     path: "*",
     element: <NotFound />,

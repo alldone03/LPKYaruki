@@ -48,80 +48,67 @@ export default function TentangKami() {
                 </section>
 
                 {/* Section 2: Tentang Perusahaan */}
-                <section className="flex h-screen flex-col items-center pt-20" aria-label="Tentang Perusahaan">
-                    <h2 className="mb-5 text-2xl md:text-4xl font-bold text-white">Tentang Perusahaan</h2>
-                    <p className="px-4 text-justify indent-10 md:px-9 md:text-2xl py-10">
-                        LPK Yaruki Indonesia berfokus terhadap training bahasa Jepang untuk penyaluran tenaga kerja Indonesia di berbagai bidang melalui program pelatihan khusus seperti mekanik mobil, body repair, manufacturing [maintenance,engineering,IT] dan lain-lain.
+                <section className="bg-white py-12 px-6 max-w-5xl mx-auto">
+                    <h2 className="text-3xl font-bold text-center text-blue-800 mb-6">Tentang Perusahaan</h2>
+                    <p className="text-gray-700 text-justify mb-8">
+                        <strong>LPK Yaruki Indonesia</strong> berfokus terhadap training bahasa Jepang untuk penyaluran tenaga kerja Indonesia ke berbagai bidang melalui program pelatihan khusus, seperti mekanik mobil, body repair, dan manufacturing (maintenance, engineering, IT), serta bidang lainnya.
                     </p>
-                    <table className="mx-2 my-4 w-full md:w-auto md:px-7 table-auto   text-base md:text-2xl">
-                        <tbody>
-                            <tr>
-                                <th className="w-1/3 px-4 py-2 font-bold text-left">Nama Perusahaan</th>
-                                <td className="px-4 py-2">:</td>
-                                <td className="px-4 py-2">PT. Yaruki Solusi Indonesia</td>
-                            </tr>
-                            <tr>
-                                <th className="px-4 py-2 font-bold text-left">Tanggal Berdiri</th>
-                                <td className="px-4 py-2">:</td>
-                                <td className="px-4 py-2">2025</td>
-                            </tr>
-                            <tr>
-                                <th className="px-4 py-2 font-bold text-left">Alamat</th>
-                                <td className="px-4 py-2">:</td>
-                                <td className="px-4 py-2">
-                                    Jl Merak Raya H1 No. 134 Jababeka II, Desa Mekarmukti, Kecamatan Cikarang Utara, Kabupaten Bekasi, Jawa Barat
-                                </td>
-                            </tr>
-                            <tr>
-                                <th className="px-4 py-2 font-bold text-left">Bidang Usaha</th>
-                                <td className="px-4 py-2">:</td>
-                                <td className="px-4 py-2">
-                                    1. Maintenance <br />
-                                    2. People Development <br />
-                                    3. Pelatihan Bahasa Jepang
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-
-                {/* Section 3: Visi & Misi */}
-                <section className="flex h-screen flex-col items-center  pt-20" aria-label="Visi dan Misi Perusahaan">
-
-
-                    <div className="card bg-primary text-primary-content w-96 md:w-1/2 my-5">
-                        <div className="card-body">
-                            <h2 className="text-center text-2xl md:text-4xl font-bold">Visi</h2>
-                            <ul className="list-disc list-inside text-justify indent-4 md:text-2xl mt-3">
-                                <ul>
-
-                                    <li>Menjadi mitra terbaik bagi perusahaan dan individu dalam:</li>
-                                </ul>
-                                <li>Pelatihan bahasa asing dan skill terkini</li>
-                                <li>Penyedia tenaga kerja terampil di dalam & luar negeri</li>
-                                <li>Partner excellent operations (Lean) di bidang:</li>
-
-                                <li>Manufacturing: Total Productive Maintenance (mesin, equipment & building), Welding, Sistem Integrasi ERP, dll</li>
-                                <li>Non Manufacturing: IT, Finance, Logistics, Services, dll</li>
-
+                    <div className="grid md:grid-cols-2 gap-8 text-gray-800">
+                        <div>
+                            <h3 className="font-semibold text-gray-900 mb-2">Nama Perusahaan</h3>
+                            <p>PT. Yaruki Solusi Indonesia</p>
+                            <h3 className="font-semibold text-gray-900 mt-4 mb-2">Tanggal Berdiri</h3>
+                            <p>2025</p>
+                            <h3 className="font-semibold text-gray-900 mt-4 mb-2">Alamat</h3>
+                            <p>
+                                Jl Merak Raya H1 No. 134, Kawasan Industri Jababeka II,<br />
+                                Desa Mekarmukti, Kecamatan Cikarang Utara,<br />
+                                Kabupaten Bekasi, Jawa Barat
+                            </p>
+                        </div>
+                        <div>
+                            <h3 className="font-semibold text-gray-900 mb-2">Bidang Usaha</h3>
+                            <ul className="list-disc list-inside space-y-1">
+                                <li>Maintenance</li>
+                                <li>People Development</li>
+                                <li>Pelatihan Bahasa Jepang</li>
                             </ul>
                         </div>
                     </div>
+                </section>
 
-                    <div className="card bg-primary text-primary-content w-96 md:w-1/2">
-                        <div className="card-body">
-                            <h2 className="text-center text-2xl md:text-4xl font-bold">Misi</h2>
-                            <p className="text-justify indent-8 md:text-2xl mt-3">
-                                Memberikan pelayanan dan fasilitas terbaik untuk mempersiapkan tenaga kerja professional untuk dalam dan luar negeri.
 
+                {/* Section 3: Visi & Misi */}
+                <section className="bg-white py-10 px-4 max-w-5xl mx-auto">
+                    <div className="grid md:grid-cols-2 gap-8">
+                        {/* VISI */}
+                        <div className="bg-blue-600 text-white p-6 rounded-2xl shadow-md">
+                            <h2 className="text-2xl font-bold mb-4 text-center">Visi</h2>
+                            <p className="mb-4">
+                                Menjadi mitra terbaik bagi perusahaan dan individu dalam:
+                            </p>
+                            <ul className="list-disc list-inside space-y-2">
+                                <li>Pelatihan bahasa asing dan skill terkini</li>
+                                <li>Penyedia tenaga kerja terampil di dalam &amp; luar negeri</li>
+                                <li>Partner excellent operations (Lean) di bidang:</li>
+                                <li className="ml-4">Manufacturing: TPM (mesin, equipment &amp; building), Welding, Sistem Integrasi ERP, dll</li>
+                                <li className="ml-4">Non-Manufacturing: IT, Finance, Logistics, Services, dll</li>
+                            </ul>
+                        </div>
+                        {/* MISI */}
+                        <div className="bg-blue-600 text-white p-6 rounded-2xl shadow-md flex flex-col justify-center">
+                            <h2 className="text-2xl font-bold mb-4 text-center">Misi</h2>
+                            <p className="text-justify">
+                                Memberikan pelayanan dan fasilitas terbaik untuk mempersiapkan tenaga kerja profesional untuk dalam dan luar negeri.
                             </p>
                         </div>
                     </div>
                 </section>
 
+
                 {/* Section 4: Layanan Kami */}
                 <section className="flex flex-col items-center  pt-20" aria-label="Layanan Perusahaan">
-                    <h2 className="mb-5 text-2xl font-bold">Layanan Yang Kami Tawarkan</h2>
+                    <h2 className="text-3xl font-bold text-center text-blue-800 mb-6">Layanan Yang Kami Tawarkan</h2>
                     <div className="card bg-base-100 my-4 w-screen shadow-sm md:my-0 md:w-3xl">
                         <div className="card-body">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mx-2 my-4 w-full max-w-5xl">
@@ -176,7 +163,7 @@ export default function TentangKami() {
                     {/* Section 5: Tujuan Kami */}
                     <div className="card bg-base-100 my-4 w-screen shadow-sm md:my-0 md:w-3xl">
                         <div className="card-body">
-                            <h2 className="text-center text-2xl font-bold mb-5">Tujuan Kami</h2>
+                            <h2 className="text-3xl font-bold text-center text-blue-800 mb-6">Tujuan Kami</h2>
                             <div className="flex flex-col gap-4">
                                 <article className="card card-side bg-base-100 shadow-sm">
                                     <img src={goal1} alt="Meningkatkan kompetensi global karyawan" className="w-30 h-30 object-cover" />
@@ -208,7 +195,7 @@ export default function TentangKami() {
 
                 {/* Section 6: Capaian Berikutnya */}
                 <section className="flex flex-col items-center border-t-4 pt-10" aria-label="Capaian Berikutnya">
-                    <h2 className="mb-2 text-2xl font-bold">Capaian Berikutnya</h2>
+                    <h2 className="text-3xl font-bold text-center text-blue-800 mb-6">Capaian Berikutnya</h2>
                     <div className="card bg-base-100 my-2 w-screen shadow-sm md:my-0 md:w-3xl">
                         <div className="card-body">
                             <p className="text-justify md:text-lg px-4 md:px-10">

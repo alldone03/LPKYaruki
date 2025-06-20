@@ -79,7 +79,7 @@ export default function ProgramKami() {
                 {/* Fasilitas Section */}
                 <section className="bg-white">
                     <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-                        <h2 className="text-3xl font-extrabold text-gray-900">Fasilitas Pelatihan</h2>
+                        <h2 className="text-2xl font-bold mb-4 text-blue-800 text-center">Fasilitas Pelatihan</h2>
                         <div className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 p-6">
                             <img src={Picture1} alt="Ruang kelas pelatihan bahasa Jepang" />
                             <img src={Picture2} alt="Fasilitas pelatihan teknis seperti pengelasan" />
@@ -94,7 +94,7 @@ export default function ProgramKami() {
                 {/* Proses Tahapan */}
                 <section>
                     <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-                        <h2 className="text-3xl font-extrabold text-gray-900">Tahapan Proses Pelatihan</h2>
+                        <h2 className="text-2xl font-bold mb-4 text-blue-800 text-center">Tahapan Proses Pelatihan</h2>
                         <ul className="steps steps-vertical mt-4">
                             <li className="step step-primary card pr-4 text-accent-content shadow-sm py-2">
                                 <div className="flex flex-col gap-2">
@@ -128,30 +128,30 @@ export default function ProgramKami() {
                 {/* Program dan Pekerjaan */}
                 <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div className="card w-full bg-info text-info-content shadow-sm">
+                        <div className="card w-full outline outline-info text-info-content shadow-sm">
                             <div className="card-body">
-                                <h2 className="text-3xl font-bold">Pilihan Program Kerja di Jepang</h2>
+                                <h2 className="text-2xl font-bold mb-4 text-blue-800 text-center">Pilihan Program Kerja di Jepang</h2>
                                 <ul className="mt-6 flex flex-col gap-2 text-lg">
                                     <div className="grid gap-6 md:grid-cols-2 ">
                                         {[
                                             {
-                                                title: "Magang (Kenshusei)",
-                                                desc: "Program pelatihan keterampilan kerja dan budaya Jepang selama 1–3 tahun.",
+                                                title: "Magang [Kenshusei]",
+                                                desc: "Program pelatihan keterampilan praktis dan pemahaman budaya kerja Jepang. Kontrak Program magang 3- 5 tahun",
                                                 link: "/program-kami/magang-kenshusei",
                                             },
                                             {
                                                 title: "Tokutei Ginou",
-                                                desc: "Program kerja dengan visa keahlian khusus di bidang tertentu seperti perhotelan, perawatan lansia, dan konstruksi.",
+                                                desc: "Tokutei ginou merupakan program penyaluran tenaga kerja ke Jepang dengan menggunakan visa pekerja yang memiliki keahlian khusus di bidang tertentu.",
                                                 link: "/program-kami/tokutei-ginou",
                                             },
                                             {
                                                 title: "Engineering",
-                                                desc: "Bekerja sebagai tenaga ahli (engineer) Indonesia di perusahaan Jepang.",
+                                                desc: "Program ini dirancang untuk membantu insinyur Indonesia bekerja di Jepang",
                                                 link: "/program-kami/engineering",
                                             },
                                             {
                                                 title: "Kuliah Sambil Magang (Nihon Go Gakkou)",
-                                                desc: "Program belajar bahasa Jepang sambil bekerja, dengan peluang melanjutkan kuliah dan bekerja di Jepang.",
+                                                desc: "Program Belajar Bahasa dan budaya Jepang. Setelah lulus program,Siswa Bisa melanjutkan Kuliah kejuruan atau langsung Berkarir di Perusahaan di Jepang.",
                                                 link: "/program-kami/nihon-go-gakkou",
                                             },
                                         ].map((program, idx) => (
@@ -170,9 +170,9 @@ export default function ProgramKami() {
                                 </ul>
                             </div>
                         </div>
-                        <div className="card w-full bg-info text-info-content shadow-sm">
+                        <div className="card w-full outline outline-info text-info-content shadow-sm">
                             <div className="card-body">
-                                <h2 className="text-3xl font-bold">16 Bidang Pekerjaan Tersedia</h2>
+                                <h2 className="text-2xl font-bold mb-4 text-blue-800 text-center">16 Bidang Pekerjaan Tersedia</h2>
                                 <ul className="mt-6 flex flex-col gap-2 text-lg">
                                     {bidangPekerjaan.map((bidang, index) => (
                                         <li key={index}>{index + 1}. {bidang}</li>

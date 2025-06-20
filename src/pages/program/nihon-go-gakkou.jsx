@@ -1,7 +1,6 @@
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 
-import budgetEngineering from "../../assets/magang-kenshusei/buget-nihon-go-gakkou.png";
 
 
 
@@ -24,16 +23,20 @@ export default function NihonGoGakkou() {
             <Navbar />
 
             <main className="pt-20 p-2">
-                <section>
-                    <h1 className="text-3xl text-center pt-4">Nihon Go Gakkou
+                <section className="px-4 py-6 max-w-3xl mx-auto">
+                    <h1 className="text-4xl font-bold mb-4 text-blue-800 text-center">Nihon Go Gakkou
                     </h1>
-                    <p className="text-justify pt-4  indent-8">Program Belajar Bahasa dan budaya Jepang. Setelah lulus program,Siswa Bisa melanjutkan Kuliah kejuruan atau langsung Berkarir di Perusahaan di Jepang.
+                    <p className="text-justify pt-4 indent-8">Program Belajar Bahasa dan budaya Jepang. Setelah lulus program,Siswa Bisa melanjutkan Kuliah kejuruan atau langsung Berkarir di Perusahaan di Jepang.
                     </p>
-                    <h2 className="text-2xl text-center pt-4">
-                        PERSYARATAN
-                    </h2>
+                </section>
+
+                <section className="px-4 py-6 max-w-3xl mx-auto">
+                    <h2 className="text-2xl font-bold mb-4 text-blue-800 text-center">Persyaratan Program Belajar ke Jepang</h2>
+                    <p className="mb-4 text-gray-700">
+                        Berikut adalah dokumen dan kriteria yang harus dipenuhi oleh peserta untuk mengikuti program belajar ke Jepang:
+                    </p>
                     <ul className="list-disc list-outside pl-8 pt-4 flex flex-col gap-2 ">
-                        <li>Formulir pendaftaran                        </li>
+                        <li>Formulir pendaftaran</li>
                         <li>Nilai sekolah/transkrip & Ijasah terakhir</li>
                         <li>Fotocopy paspor dan KTP</li>
                         <li>Fotocopy Kartu Keluarga & Fotocopy Akte Kelahiran
@@ -50,7 +53,13 @@ export default function NihonGoGakkou() {
                         </li>
 
                     </ul>
-                    <h2 className="text-2xl text-center pt-4">
+                    <p className="mt-4 text-sm italic text-gray-600">
+                        *Persyaratan dapat berubah sewaktu-waktu sesuai kebijakan terbaru.
+                    </p>
+                </section>
+                <br />
+                <section className="px-4 py-6 max-w-3xl mx-auto">
+                    <h2 className="text-2xl font-bold mb-4 text-blue-800 text-center">
                         AKTIVITAS & BENEFIT
                     </h2>
                     <ul className="list-disc list-outside pl-8 pt-4 flex flex-col gap-2 ">
@@ -67,21 +76,93 @@ export default function NihonGoGakkou() {
                             Berkarir di perusahan Perusahaan Jepang dengan posisi yang lebih Baik,setara dengan Tenaga kerja lokal Jepang & berpeluang mengajak keluarga untuk tinggal di Jepang.
                         </li>
                     </ul>
+                </section>
+                <br />
+                <section className="px-4 py-6 max-w-3xl mx-auto">
+                    <h1 className="text-2xl font-bold mb-4 text-blue-800 text-center">Estimasi Biaya Program Belajar di Jepang</h1>
+
+                    <div>
+                        <h2 className="text-lg font-semibold text-gray-800 mt-4">Biaya yang Dikeluarkan di Indonesia</h2>
+                        <table className="table-auto w-full border-collapse border mt-2 text-sm text-left">
+                            <thead>
+                                <tr className="bg-gray-200">
+                                    <th className="border p-2">No</th>
+                                    <th className="border p-2">Keterangan</th>
+                                    <th className="border p-2">Biaya</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td className="border p-2">1</td>
+                                    <td className="border p-2">Biaya pengurusan dokumen CoE, penerjemahan, dan pengiriman dokumen ke Jepang</td>
+                                    <td className="border p-2">Rp5.000.000</td>
+                                </tr>
+                                <tr>
+                                    <td className="border p-2">2</td>
+                                    <td className="border p-2">Pelatihan Bahasa Jepang sampai N4</td>
+                                    <td className="border p-2">Rp10.000.000</td>
+                                </tr>
+                                <tr>
+                                    <td className="border p-2">3</td>
+                                    <td className="border p-2">Biaya Deposit tempat tinggal di Jepang</td>
+                                    <td className="border p-2">Rp15.000.000</td>
+                                </tr>
+                                <tr>
+                                    <td className="border p-2">4</td>
+                                    <td className="border p-2">Uang Saku Persiapan Awal di Jepang</td>
+                                    <td className="border p-2">Rp10.000.000</td>
+                                </tr>
+                                <tr>
+                                    <td className="border p-2">5</td>
+                                    <td className="border p-2">Visa dan Tiket Pesawat</td>
+                                    <td className="border p-2">Rp10.000.000</td>
+                                </tr>
+                                <tr className="bg-gray-100 font-semibold">
+                                    <td className="border p-2" colSpan={2}>Estimasi Total</td>
+                                    <td className="border p-2">Rp50.000.000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </section>
+                <section className="px-4 py-6 max-w-3xl mx-auto">
+                    <div>
+                        <h2 className="text-lg font-semibold text-gray-800 mt-6">Biaya yang Dikeluarkan di Jepang</h2>
+                        <table className="table-auto w-full border-collapse border mt-2 text-sm text-left">
+                            <thead>
+                                <tr className="bg-gray-200">
+                                    <th className="border p-2">No</th>
+                                    <th className="border p-2">Keterangan</th>
+                                    <th className="border p-2">Biaya</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td className="border p-2">1</td>
+                                    <td className="border p-2">Biaya Sekolah di Nihongo Gakkou (per tahun)</td>
+                                    <td className="border p-2">Rp70.000.000</td>
+                                </tr>
+                                <tr>
+                                    <td className="border p-2">2</td>
+                                    <td className="border p-2">Apartment di Jepang (per tahun)</td>
+                                    <td className="border p-2">Rp48.000.000</td>
+                                </tr>
+                                <tr className="bg-gray-100 font-semibold">
+                                    <td className="border p-2" colSpan={2}>Estimasi Total</td>
+                                    <td className="border p-2">Rp118.000.000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p className="mt-3 text-sm italic text-red-600">*Biaya bisa berubah sesuai dengan kurs</p>
+                    </div>
+
+                </section>
+                {/* <section className="px-4 py-6 max-w-3xl mx-auto">
                     <h2 className="text-2xl text-center pt-4">
-                        ESTIMASI BIAYA
+                        Gaji & Biaya Hidup di Jepang
                     </h2>
                     <p>
-
-                        <div className="text-2xl text-center pt-4">
-                            <img src={budgetEngineering} alt="Budget Magang Kenshusei" />
-                        </div>
-
-                    </p>
-                    <h2 className="text-2xl text-center pt-4">
-                        Gaji & Biaya Hidup di Jepan
-                    </h2>
-                    <p>
-
                         <div className="overflow-x-auto pt-4">
                             <table className="table w-full">
                                 <thead>
@@ -122,22 +203,11 @@ export default function NihonGoGakkou() {
                                     </tr>
                                 </tbody>
                             </table>
-
-
-
                         </div>
-
                     </p>
-
-
-                </section>
-
-
-
-            </main>
-
+                </section> */}
+            </main >
             <Footer />
-
         </>
     )
 }
