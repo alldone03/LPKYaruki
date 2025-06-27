@@ -1,7 +1,7 @@
 
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/logo.webp";
 import { Link } from "react-router";
-import jpnflag from "../../assets/japan-flag.png";
+import jpnflag from "../../assets/japan-flag.webp";
 import { useNavbar } from "../../context/NavbarContext";
 
 
@@ -44,7 +44,7 @@ export default function Navbar() {
           </ul>
         </div>
         <Link to={window.location.origin} className="ml-5">
-          <img src={Logo} alt="Logo LPK Yaruki" className="h-12  rounded-sm" />
+          <img src={Logo} alt="Logo LPK Yaruki" className="h-12 rounded-sm" loading="lazy" />
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex ">
@@ -72,9 +72,7 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="navbar-end">
-
-
-        <img src={jpnflag} alt="Bendera Jepang" className="w-32" />
+        <img src={jpnflag} alt="Bendera Jepang" className="h-12" loading="lazy" />
       </div>
     </div >
   )

@@ -154,7 +154,9 @@ export default function Engineering() {
                         <article className="mt-4">
                             <h3 className="font-semibold text-blue-600">✔ Cicilan / Dana Talang</h3>
                             <p className="text-sm text-right text-blue-600 font-semibold">
-                                Dana talang Max : 45jt/siswa
+                                Dana talang : 30-45jt/siswa
+                                [setelah COE keluar]
+
                             </p>
                             <ol className="list-decimal ml-6 text-gray-800">
                                 <li>

@@ -96,7 +96,7 @@ export default function Beranda() {
                         ].map((program, idx) => (
                             <div key={idx} className="card bg-base-100 shadow-md p-4 md:w-56 md:flex justify-between">
                                 <h3 className="text-xl font-semibold flex items-center gap-2">
-                                    <img src={checklist} alt={`Ikon program ${program.title}`} className="w-6" loading="lazy" />
+                                    <img loading="lazy" src={checklist} alt={`Ikon program ${program.title}`} className="w-6" />
                                     {program.title}
                                 </h3>
                                 <p className="mt-2 indent-8 text-justify">{program.desc}</p>

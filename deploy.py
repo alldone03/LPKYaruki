@@ -9,6 +9,31 @@ FTP_USER = os.getenv("FTP_USER")
 FTP_PASS = os.getenv("FTP_PASS")
 FTP_TARGET_DIR = os.getenv("FTP_TARGET_DIR")
 
+# Fungsi untuk menghapus isi folder FTP secara rekursif
+def clear_ftp_folder(ftp, target_dir):
+    try:
+        ftp.cwd(target_dir)
+        items = ftp.nlst()
+        if not items:
+            print(f"📁 Folder {target_dir} sudah kosong.")
+            return True
+        for item in items:
+            try:
+                ftp.delete(item)
+                print(f"🗑️ Hapus file: {item}")
+            except:
+                try:
+                    clear_ftp_folder(ftp, item)  # rekursif hapus subfolder
+                    ftp.rmd(item)
+                    print(f"🗑️ Hapus folder: {item}")
+                except Exception as e:
+                    print(f"❌ Gagal hapus {item}: {e}")
+                    return False
+        return True
+    except Exception as e:
+        print(f"❌ Gagal akses {target_dir}: {e}")
+        return False
+
 # Fungsi untuk upload satu file ke FTP
 def upload_file(ftp, filepath, target_dir):
     with open(filepath, "rb") as file:
@@ -44,7 +69,15 @@ def main():
     ftp.cwd(FTP_TARGET_DIR)
     
     
+    # print("🧹 Mengosongkan folder assets/ di FTP...")
+    # asset_path = os.path.join(FTP_TARGET_DIR, "assets").replace("\\", "/")
+    # if clear_ftp_folder(ftp, asset_path):
+    #     print("🚀 Mulai upload ke server...")
+    #     upload_folder(ftp, "dist", FTP_TARGET_DIR)
+    # else:
+    #     print("⚠️ Folder assets gagal dikosongkan, upload dibatalkan.")
 
+    
     print("🚀 Mulai upload ke server...")
     upload_folder(ftp, "dist", FTP_TARGET_DIR)
 

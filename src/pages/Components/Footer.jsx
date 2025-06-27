@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/logo.webp";
 import { useNavbar } from "../../context/NavbarContext";
 
 
@@ -11,15 +11,14 @@ export default function Footer() {
   return (
     <>
       {/* // floating */}
-      <div className="fixed bottom-0 right-0  z-50 flex flex-col justify-center gap-2 p-4  shadow-sm md:hidden">
+      <div className="fixed bottom-0 right-0  z-50 flex flex-col justify-center items-stretch gap-2 p-4  shadow-sm md:hidden">
 
-        <a href="mailto:admin@yarukid.com"><button className="btn bg-white text-black border-[#e5e5e5]">
+        <a href="mailto:yaruki.solusi.indonesia@gmail.com"><button className="btn bg-white text-black border-[#e5e5e5] w-full">
 
           Email Admin
         </button></a>
         <a href="https://wa.me/+62811918538" target="_blank" rel="noopener noreferrer">
-          <button className="btn bg-[#03C755] text-white border-[#00b544]">
-
+          <button className="btn bg-[#03C755] text-white border-[#00b544] w-full">
             WA Admin
           </button></a>
       </div>
@@ -29,7 +28,7 @@ export default function Footer() {
             <Link to={window.location.origin}>
               <img src={Logo} alt="Logo LPK Yaruki" className="h-24 rounded-sm" />
             </Link>
-            <h2 className="text-3xl font-bold mt-4">LPK Yaruki</h2>
+            <h2 className="text-3xl font-bold mt-4">LPK Yaruki Indonesia</h2>
             <p className="text-lg mt-2">
               "Share Value, Membangun Manusia, Membangun Bangsa Indonesia"
             </p>
@@ -71,10 +70,10 @@ export default function Footer() {
             </p>
             <p className="mt-2">
               <a href="https://wa.me/+62811918538" rel="noopener noreferrer" target="_blank">
-                +62811918538 (Hasbian)
+                +62811918538 (Admin LPK Yaruki)
               </a>
               <br />
-              <a href="mailto:admin@yarukid.com">admin@yarukid.com</a>
+              <a href="mailto:yaruki.solusi.indonesia@gmail.com">yaruki.solusi.indonesia@gmail.com</a>
               <br />
               <a href="https://yarukid.com" rel="noopener noreferrer" target="_blank">
                 yarukid.com

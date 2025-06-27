@@ -1,17 +1,17 @@
 import bghome from "../assets/IMG-20240220-WA0005.webp";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
-import Logo from "../assets/logo.png";
 
-import picture1 from "../assets/tentang-kami/Picture1.png";
-import picture2 from "../assets/tentang-kami/Picture2.png";
-import picture3 from "../assets/tentang-kami/Picture3.png";
-import picture4 from "../assets/tentang-kami/Picture4.png";
-import picture5 from "../assets/tentang-kami/Picture5.png";
 
-import goal1 from "../assets/tentang-kami/goal1.png";
-import goal2 from "../assets/tentang-kami/goal2.png";
-import goal3 from "../assets/tentang-kami/goal3.png";
+import picture1 from "../assets/tentang-kami/Picture1.webp";
+import picture2 from "../assets/tentang-kami/Picture2.webp";
+import picture3 from "../assets/tentang-kami/Picture3.webp";
+import picture4 from "../assets/tentang-kami/Picture4.webp";
+import picture5 from "../assets/tentang-kami/Picture5.webp";
+
+// import goal1 from "../assets/tentang-kami/goal1.png";
+// import goal2 from "../assets/tentang-kami/goal2.png";
+// import goal3 from "../assets/tentang-kami/goal3.png";
 
 export default function TentangKami() {
     return (
@@ -114,7 +114,8 @@ export default function TentangKami() {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mx-2 my-4 w-full max-w-5xl">
                                 <div className="card bg-base-100 shadow-sm">
                                     <figure>
-                                        <img src={picture1} alt="Integrated Facility Maintenance Solution" className="mb-2" />
+                                        <img loading="lazy"
+                                            src={picture1} alt="Integrated Facility Maintenance Solution" className="mb-2" />
                                     </figure>
                                     <div className="card-body">
                                         <h3 className="card-title text-center">Integrated Facility Maintenance Solution</h3>
@@ -123,7 +124,8 @@ export default function TentangKami() {
 
                                 <div className="card bg-base-100 shadow-sm">
                                     <figure>
-                                        <img src={picture2} alt="OEE & Utility Monitoring System" className="mb-2" />
+                                        <img loading="lazy"
+                                            src={picture2} alt="OEE & Utility Monitoring System" className="mb-2" />
                                     </figure>
                                     <div className="card-body">
                                         <h3 className="card-title text-center">OEE & Utility Monitoring System</h3>
@@ -132,7 +134,8 @@ export default function TentangKami() {
 
                                 <div className="card bg-base-100 shadow-sm">
                                     <figure>
-                                        <img src={picture3} alt="Cleaning Service & Maintenance" className="mb-2" />
+                                        <img loading="lazy"
+                                            src={picture3} alt="Cleaning Service & Maintenance" className="mb-2" />
                                     </figure>
                                     <div className="card-body">
                                         <h3 className="card-title text-center">Cleaning Service & Maintenance</h3>
@@ -141,7 +144,8 @@ export default function TentangKami() {
 
                                 <div className="card bg-base-100 shadow-sm">
                                     <figure>
-                                        <img src={picture4} alt="TPM Training & Coaching" className="mb-2" />
+                                        <img loading="lazy"
+                                            src={picture4} alt="TPM Training & Coaching" className="mb-2" />
                                     </figure>
                                     <div className="card-body">
                                         <h3 className="card-title text-center">TPM Training & Coaching</h3>
@@ -150,7 +154,8 @@ export default function TentangKami() {
 
                                 <div className="card bg-base-100 shadow-sm">
                                     <figure>
-                                        <img src={picture5} alt="Outsourcing & Development" className="mb-2" />
+                                        <img loading="lazy"
+                                            src={picture5} alt="Outsourcing & Development" className="mb-2" />
                                     </figure>
                                     <div className="card-body">
                                         <h3 className="card-title text-center">Outsourcing & Development</h3>
@@ -161,12 +166,15 @@ export default function TentangKami() {
                     </div>
 
                     {/* Section 5: Tujuan Kami */}
+                </section>
+                {/* <section>
                     <div className="card bg-base-100 my-4 w-screen shadow-sm md:my-0 md:w-3xl">
                         <div className="card-body">
                             <h2 className="text-3xl font-bold text-center text-blue-800 mb-6">Tujuan Kami</h2>
                             <div className="flex flex-col gap-4">
                                 <article className="card card-side bg-base-100 shadow-sm">
-                                    <img src={goal1} alt="Meningkatkan kompetensi global karyawan" className="w-30 h-30 object-cover" />
+                                    <img loading="lazy"
+                                        src={goal1} alt="Meningkatkan kompetensi global karyawan" className="w-30 h-30 object-cover" />
                                     <div className="card-body">
                                         <h3 className="card-title">Goal #1</h3>
                                         <p>Meningkatkan kompetensi global karyawan</p>
@@ -174,7 +182,8 @@ export default function TentangKami() {
                                 </article>
 
                                 <article className="card card-side bg-base-100 shadow-sm">
-                                    <img src={goal2} alt="Memperluas jaringan bisnis internasional" className="w-30 h-30 object-cover" />
+                                    <img loading="lazy"
+                                        src={goal2} alt="Memperluas jaringan bisnis internasional" className="w-30 h-30 object-cover" />
                                     <div className="card-body">
                                         <h3 className="card-title">Goal #2</h3>
                                         <p>Memperluas jaringan bisnis internasional</p>
@@ -182,7 +191,8 @@ export default function TentangKami() {
                                 </article>
 
                                 <article className="card card-side bg-base-100 shadow-sm">
-                                    <img src={goal3} alt="Meningkatkan kualitas dan efisiensi layanan" className="w-30 h-30 object-cover" />
+                                    <img loading="lazy"
+                                        src={goal3} alt="Meningkatkan kualitas dan efisiensi layanan" className="w-30 h-30 object-cover" />
                                     <div className="card-body">
                                         <h3 className="card-title">Goal #3</h3>
                                         <p>Meningkatkan kualitas dan efisiensi layanan</p>
@@ -191,10 +201,10 @@ export default function TentangKami() {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 {/* Section 6: Capaian Berikutnya */}
-                <section className="flex flex-col items-center border-t-4 pt-10" aria-label="Capaian Berikutnya">
+                {/* <section className="flex flex-col items-center border-t-4 pt-10" aria-label="Capaian Berikutnya">
                     <h2 className="text-3xl font-bold text-center text-blue-800 mb-6">Capaian Berikutnya</h2>
                     <div className="card bg-base-100 my-2 w-screen shadow-sm md:my-0 md:w-3xl">
                         <div className="card-body">
@@ -205,11 +215,12 @@ export default function TentangKami() {
                                 &#129095;
                             </div>
                             <figure>
-                                <img src={Logo} alt="Logo LPK Yaruki Indonesia" className="mx-auto mb-2" />
+                                <img loading="lazy"
+ src={Logo} alt="Logo LPK Yaruki Indonesia" className="mx-auto mb-2" />
                             </figure>
                         </div>
                     </div>
-                </section>
+                </section> */}
             </main>
 
 
