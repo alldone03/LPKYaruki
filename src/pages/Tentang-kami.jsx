@@ -7,9 +7,6 @@ import Navbar from "./Components/Navbar";
 import checklist from "../assets/checklist.webp";
 import { Link } from "react-router";
 
-// import goal1 from "../assets/tentang-kami/goal1.png";
-// import goal2 from "../assets/tentang-kami/goal2.png";
-// import goal3 from "../assets/tentang-kami/goal3.png";
 
 export default function TentangKami() {
     return (
