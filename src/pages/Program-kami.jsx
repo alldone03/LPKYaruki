@@ -2,10 +2,10 @@ import bghome from "../assets/IMG-20240220-WA0005.webp";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 
-import Picture1 from "../assets/program-kami/Picture1.png";
-import Picture2 from "../assets/program-kami/Picture2.png";
-import Picture3 from "../assets/program-kami/Picture3.png";
-import checklist from "../assets/checklist.png";
+import Picture1 from "../assets/program-kami/Picture1.webp";
+import Picture2 from "../assets/program-kami/Picture2.webp";
+import Picture3 from "../assets/program-kami/Picture3.webp";
+import checklist from "../assets/checklist.webp";
 import { Link } from "react-router";
 
 import summaryImg from "../assets/Summary.webp";
@@ -16,6 +16,7 @@ import foto1 from "../assets/dokumentasi-jp/Picture1.webp"
 import foto2 from "../assets/dokumentasi-jp/Picture2.webp"
 import foto3 from "../assets/dokumentasi-jp/Picture3.webp"
 import foto4 from "../assets/dokumentasi-jp/Picture4.webp"
+import sampleImage from "../assets/sampleImage.webp"
 
 export default function ProgramKami() {
 
@@ -206,7 +207,7 @@ export default function ProgramKami() {
                     <div className="mb-8">
                         <h3 className="text-xl font-semibold text-gray-800 mb-2">📚 1. Materi Umum (Basic Skill)</h3>
                         <ol className="list-decimal list-inside space-y-2 text-gray-700">
-                            <li><strong>Bahasa Jepang:</strong> Target minimal JLPT N4 (300 jam) atau N5 (150 jam).</li>
+                            <li><strong>Bahasa Jepang:</strong> Target minimal JLPT N4 (300 jam)</li>
                             <li><strong>Basic Mentality &amp; GL Role:</strong> Sikap hormat &amp; pemahaman peran kerja (role playing).</li>
                             <li><strong>Safety &amp; 5S Genba &amp; Office:</strong> Mindset safety &amp; abnormality management (SFM).</li>
                             <li><strong>Lean Operation (Toyota Production System):</strong> Dasar efisiensi kerja berbasis SFM.</li>
@@ -230,7 +231,7 @@ export default function ProgramKami() {
                         <h3 className="text-xl font-semibold text-gray-800 mb-2">📌 Informasi Tambahan</h3>
                         <ul className="list-disc list-inside text-gray-700">
                             <li>Durasi pelatihan: <strong>3–4 bulan</strong></li>
-                            <li>Peserta: Minimal lulusan SLTA, maksimal usia 30 tahun</li>
+                            <li>Peserta: Pada posisi engineer, batas usia juga maksimal 35 tahun, kecuali jika terdapat pengecualian dari pihak End User (perusahaan).</li>
                             <li>Rasio pengajar: 1 guru untuk 20–25 siswa</li>
                             <li>Metode: 20–30% teori, 70–80% simulasi / role playing</li>
                         </ul>
@@ -296,6 +297,47 @@ export default function ProgramKami() {
 
                     <p class="mt-4 text-sm text-red-600 italic">Catatan: Hanya jalur SSW-2 yang memperbolehkan membawa keluarga ke Jepang.</p>
 
+                </section>
+                <section className="p-6 max-w-5xl mx-auto">
+                    <h2 className="text-3xl font-bold mb-4 text-center text-blue-800">Job Data - Lowongan Magang Jepang 2025</h2>
+                    <img src={sampleImage} alt="Sample Job Database" className="mb-6 rounded shadow-lg w-full" />
+                    <p className="text-lg mb-2">Total sudah terkirim: <strong className="text-blue-600">±50 pekerja</strong> (2021–2024)</p>
+                    <p className="text-lg mb-6">Sedang progress: <strong className="text-blue-600">±25 pekerja</strong> (hingga Juli 2025)</p>
+
+                    <div className="overflow-x-auto">
+                        <table className="table-auto w-full border border-gray-300 text-sm">
+                            <thead className="bg-yellow-300 text-left">
+                                <tr>
+                                    <th className="px-3 py-2 border">No</th>
+                                    <th className="px-3 py-2 border">Nama Perusahaan</th>
+                                    <th className="px-3 py-2 border">Bidang</th>
+                                    <th className="px-3 py-2 border">Lokasi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {[
+                                    { name: "YUBIS Co.,Ltd", field: "Waterproof", city: "Okayama Ken" },
+                                    { name: "T.M FOOD Ltd", field: "Pengolahan Makanan", city: "Hyougo Ken" },
+                                    { name: "NISHI YAMA Co.,Ltd", field: "Konstruksi", city: "Okayama Ken" },
+                                    { name: "KATO KOGYO Co.,Ltd", field: "Konstruksi", city: "Hokkaido Ken" },
+                                    { name: "RITSU", field: "Piping/Plumbing", city: "Hiroshima" },
+                                    { name: "YAMAGUCHI", field: "Konstruksi / TOBI", city: "Okayama Ken" },
+                                    { name: "FUKASHIRO", field: "Konstruksi / TOBI", city: "Fukuyama" },
+                                    { name: "KOKEN", field: "Konstruksi / TOBI", city: "Okayama Ken" },
+                                    { name: "CHUGOKU TEKKO", field: "Welding", city: "Hiroshima" },
+                                    { name: "SHELL", field: "Foundry", city: "Shiga" }
+                                ].map((job, index) => (
+                                    <tr key={index} className="border-b">
+                                        <td className="px-3 py-2 border text-center">{index + 1}</td>
+                                        <td className="px-3 py-2 border">{job.name}</td>
+                                        <td className="px-3 py-2 border">{job.field}</td>
+                                        <td className="px-3 py-2 border">{job.city}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+
+                    </div>
                 </section>
 
                 <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">

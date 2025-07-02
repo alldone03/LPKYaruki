@@ -3,11 +3,9 @@ import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 
 
-import picture1 from "../assets/tentang-kami/Picture1.webp";
-import picture2 from "../assets/tentang-kami/Picture2.webp";
-import picture3 from "../assets/tentang-kami/Picture3.webp";
-import picture4 from "../assets/tentang-kami/Picture4.webp";
-import picture5 from "../assets/tentang-kami/Picture5.webp";
+
+import checklist from "../assets/checklist.webp";
+import { Link } from "react-router";
 
 // import goal1 from "../assets/tentang-kami/goal1.png";
 // import goal2 from "../assets/tentang-kami/goal2.png";
@@ -107,63 +105,44 @@ export default function TentangKami() {
 
 
                 {/* Section 4: Layanan Kami */}
-                <section className="flex flex-col items-center  pt-20" aria-label="Layanan Perusahaan">
+                <section className="px-4 py-6 max-w-3xl mx-auto md:max-w-full flex flex-col items-center" aria-label="Layanan Perusahaan">
                     <h2 className="text-3xl font-bold text-center text-blue-800 mb-6">Layanan Yang Kami Tawarkan</h2>
-                    <div className="card bg-base-100 my-4 w-screen shadow-sm md:my-0 md:w-3xl">
-                        <div className="card-body">
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mx-2 my-4 w-full max-w-5xl">
-                                <div className="card bg-base-100 shadow-sm">
-                                    <figure>
-                                        <img loading="lazy"
-                                            src={picture1} alt="Integrated Facility Maintenance Solution" className="mb-2" />
-                                    </figure>
-                                    <div className="card-body">
-                                        <h3 className="card-title text-center">Integrated Facility Maintenance Solution</h3>
-                                    </div>
-                                </div>
-
-                                <div className="card bg-base-100 shadow-sm">
-                                    <figure>
-                                        <img loading="lazy"
-                                            src={picture2} alt="OEE & Utility Monitoring System" className="mb-2" />
-                                    </figure>
-                                    <div className="card-body">
-                                        <h3 className="card-title text-center">OEE & Utility Monitoring System</h3>
-                                    </div>
-                                </div>
-
-                                <div className="card bg-base-100 shadow-sm">
-                                    <figure>
-                                        <img loading="lazy"
-                                            src={picture3} alt="Cleaning Service & Maintenance" className="mb-2" />
-                                    </figure>
-                                    <div className="card-body">
-                                        <h3 className="card-title text-center">Cleaning Service & Maintenance</h3>
-                                    </div>
-                                </div>
-
-                                <div className="card bg-base-100 shadow-sm">
-                                    <figure>
-                                        <img loading="lazy"
-                                            src={picture4} alt="TPM Training & Coaching" className="mb-2" />
-                                    </figure>
-                                    <div className="card-body">
-                                        <h3 className="card-title text-center">TPM Training & Coaching</h3>
-                                    </div>
-                                </div>
-
-                                <div className="card bg-base-100 shadow-sm">
-                                    <figure>
-                                        <img loading="lazy"
-                                            src={picture5} alt="Outsourcing & Development" className="mb-2" />
-                                    </figure>
-                                    <div className="card-body">
-                                        <h3 className="card-title text-center">Outsourcing & Development</h3>
-                                    </div>
-                                </div>
+                    <div className="grid gap-6 md:flex ">
+                        {[
+                            {
+                                title: "Magang [Kenshusei]",
+                                desc: "Program pelatihan keterampilan praktis dan pemahaman budaya kerja Jepang. Kontrak Program magang 3- 5 tahun",
+                                link: "/program-kami/magang-kenshusei",
+                            },
+                            {
+                                title: "Tokutei Ginou",
+                                desc: "Tokutei ginou merupakan program penyaluran tenaga kerja ke Jepang dengan menggunakan visa pekerja yang memiliki keahlian khusus di bidang tertentu.",
+                                link: "/program-kami/tokutei-ginou",
+                            },
+                            {
+                                title: "Engineering",
+                                desc: "Program ini dirancang untuk membantu insinyur Indonesia bekerja di Jepang",
+                                link: "/program-kami/engineering",
+                            },
+                            {
+                                title: "Kuliah Sambil Magang (Nihon Go Gakkou)",
+                                desc: "Program Belajar Bahasa dan budaya Jepang. Setelah lulus program,Siswa Bisa melanjutkan Kuliah kejuruan atau langsung Berkarir di Perusahaan di Jepang.",
+                                link: "/program-kami/nihon-go-gakkou",
+                            },
+                        ].map((program, idx) => (
+                            <div key={idx} className="card bg-base-100 shadow-md p-4 md:w-56 md:flex justify-between">
+                                <h3 className="text-xl font-semibold flex items-center gap-2">
+                                    <img loading="lazy" src={checklist} alt={`Ikon program ${program.title}`} className="w-6" />
+                                    {program.title}
+                                </h3>
+                                <p className="mt-2 indent-8 text-justify">{program.desc}</p>
+                                <Link to={program.link} className="btn btn-primary mt-4" aria-label={`Pelajari tentang ${program.title}`}>
+                                    Pelajari Lebih Lanjut &gt;&gt;
+                                </Link>
                             </div>
-                        </div>
+                        ))}
                     </div>
+
 
                     {/* Section 5: Tujuan Kami */}
                 </section>
