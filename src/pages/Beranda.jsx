@@ -69,10 +69,12 @@ export default function Beranda() {
             <title>Kerja ke Jepang | LPK Yaruki Solusi Indonesia</title>
             <meta name="robots" content="index, follow" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <meta
-                name="description"
-                content="LPK Yaruki Indonesia berfokus terhadap training bahasa Jepang untuk penyaluran tenaga kerja Indonesia di berbagai bidang melalui program pelatihan khusus seperti mekanik mobil, body repair, manufacturing [maintenance,engineering,IT] dan lain-lain."
-            />
+
+            <meta name="description" content="LPK Yaruki Solusi Indonesia adalah lembaga pelatihan bahasa Jepang dan penempatan kerja ke Jepang. Menyediakan program pelatihan lengkap seperti magang, SSW, engineer, hingga kuliah sambil magang, dengan bidang kerja seperti mekanik mobil, body repair, manufacturing, maintenance, engineering, dan IT." />
+            <meta name="keywords" content="LPK Yaruki, pelatihan Jepang, magang Jepang, kerja di Jepang, program kerja Jepang, SSW, Tokutei Ginou, engineering, Nihon Go Gakkou, bidang pekerjaan Jepang, training bahasa Jepang, mekanik mobil, body repair, manufacturing, maintenance, IT" />
+            <meta name="author" content="LPK Yaruki Solusi Indonesia" />
+
+
             <meta property="og:title" content="Beranda | LPK Yaruki Solusi Indonesia" />
             <meta property="og:description" content="LPK Yaruki Solusi Indonesia adalah lembaga pelatihan bahasa Jepang dan pengiriman tenaga kerja ke Jepang. Tersedia program Magang, SSW, Engineer, hingga Kuliah sambil Magang dengan dukungan lengkap dari awal hingga akhir." />
             <meta property="og:type" content="website" />
