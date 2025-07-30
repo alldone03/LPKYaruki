@@ -61,22 +61,13 @@ def upload_folder(ftp, folder_path, target_dir):
 # Proses utama
 def main():
     print("📦 Menjalankan build Vite...")
-    os.system("yarn build")
+    os.system("npm run build")
 
     print("🔌 Menghubungkan ke FTP...")
     ftp = FTP(FTP_HOST)
     ftp.login(FTP_USER, FTP_PASS)
     ftp.cwd(FTP_TARGET_DIR)
     
-    
-    # print("🧹 Mengosongkan folder assets/ di FTP...")
-    # asset_path = os.path.join(FTP_TARGET_DIR, "assets").replace("\\", "/")
-    # if clear_ftp_folder(ftp, asset_path):
-    #     print("🚀 Mulai upload ke server...")
-    #     upload_folder(ftp, "dist", FTP_TARGET_DIR)
-    # else:
-    #     print("⚠️ Folder assets gagal dikosongkan, upload dibatalkan.")
-
     
     print("🚀 Mulai upload ke server...")
     upload_folder(ftp, "dist", FTP_TARGET_DIR)

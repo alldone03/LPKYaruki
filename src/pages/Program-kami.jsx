@@ -1,22 +1,22 @@
-import bghome from "../assets/IMG-20240220-WA0005.webp";
+
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 
-import Picture1 from "../assets/program-kami/Picture1.webp";
-import Picture2 from "../assets/program-kami/Picture2.webp";
-import Picture3 from "../assets/program-kami/Picture3.webp";
 import checklist from "../assets/checklist.webp";
 import { Link } from "react-router";
 
 import summaryImg from "../assets/Summary.webp";
 import keuntungan_wlp from "../assets/keuntungan_wlp.webp";
-import pelatihan_kerja_jepang from "../assets/Program Pelatihan Menuju Kerja ke Jepang (SSW).webp";
-
+import pelatihan_kerja_jepang from "../assets/Program Pelatihan Menuju Kerja ke Jepang (SSW).webp"; 
 import foto1 from "../assets/dokumentasi-jp/Picture1.webp"
 import foto2 from "../assets/dokumentasi-jp/Picture2.webp"
 import foto3 from "../assets/dokumentasi-jp/Picture3.webp"
 import foto4 from "../assets/dokumentasi-jp/Picture4.webp"
 import sampleImage from "../assets/sampleImage.webp"
+import Picture1 from "../assets/program-kami/Picture1.webp";
+import Picture2 from "../assets/program-kami/Picture2.webp";
+import Picture3 from "../assets/program-kami/Picture3.webp";
+import bghome from "../assets/IMG-20240220-WA0005.webp";
 
 export default function ProgramKami() {
 
