@@ -50,7 +50,7 @@ export default function ProgramKami() {
         "Lulus JLPT N5 & Interview User",
     ]
     const FasilitasMagang = [
-        "Gaji mulai 160.000 Yen atau Rp 17 juta/bln",
+        "Gaji mulai 160.000 Yen atau Rp 17 juta/Bulan",
         "Asrama/tempat tinggal",
         "Asuransi Kesehatan & keselamatan kerja",
         "Kontrak mulai dari 1-3 tahun dan bisa diperpanjang",
@@ -301,8 +301,8 @@ export default function ProgramKami() {
                 <section className="p-6 max-w-5xl mx-auto">
                     <h2 className="text-3xl font-bold mb-4 text-center text-blue-800">Job Data - Lowongan Magang Jepang 2025</h2>
                     <img src={sampleImage} alt="Sample Job Database" className="mb-6 rounded shadow-lg w-full" />
-                    <p className="text-lg mb-2">Total sudah terkirim: <strong className="text-blue-600">±50 pekerja</strong> (2021–2024)</p>
-                    <p className="text-lg mb-6">Sedang progress: <strong className="text-blue-600">±25 pekerja</strong> (hingga Juli 2025)</p>
+                    <p className="text-lg mb-2">Total sudah terkirim: <strong className="text-blue-600">+50 pekerja</strong> (2021–2024)</p>
+                    <p className="text-lg mb-6">Sedang progress: <strong className="text-blue-600">+25 pekerja</strong> (hingga Juli 2025)</p>
 
                     <div className="overflow-x-auto">
                         <table className="table-auto w-full border border-gray-300 text-sm">
@@ -341,7 +341,7 @@ export default function ProgramKami() {
                 </section>
 
                 <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-2xl font-bold mb-4 text-blue-800 text-center">Foto &amp; Testimonial</h2>
+                    <h2 className="text-2xl font-bold mb-4 text-blue-800 text-center">Foto &amp; Testimonial [LPK Yaruki-Kamindo Group]</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                         <div className="overflow-hidden rounded-lg shadow-md">
                             <img src={foto1} alt="Keberangkatan peserta LPK Kamindo ke Jepang" className="w-full h-auto object-cover" />

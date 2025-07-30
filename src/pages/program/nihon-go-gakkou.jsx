@@ -67,7 +67,7 @@ export default function NihonGoGakkou() {
                             Belajar 5 hari/pekan @3 jam,selama 1.5-2 thn, kerja part time/Arubaito [maks 28 jam/pekan]
                         </li>
                         <li>
-                            Uang Saku mulai 62.000 Yen atau Rp 7 jt/bln
+                            Uang Saku mulai 62.000 Yen atau Rp 7 jt/Bulan
                         </li>
                         <li>
                             Setelah lulus, Studi lanjut S1/S2 Beasiswa di Jepang

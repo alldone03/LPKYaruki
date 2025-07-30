@@ -3,7 +3,7 @@
 import bghome from "../assets/IMG-20240220-WA0005.webp";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
-import checklist from "../assets/checklist";
+import checklist from "../assets/checklist.webp";
 
 
 import { Link } from "react-router";

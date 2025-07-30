@@ -47,7 +47,7 @@ export default function Engineering() {
                     </h2>
                     <ul className="list-disc list-outside pl-8 pt-4 flex flex-col gap-2 ">
                         <li>
-                            Gaji mulai 250.000 Yen atau Rp 28 juta/bln
+                            Gaji mulai 250.000 Yen atau Rp 28 juta/Bulan
                         </li>
                         <li>
                             Asrama/tempat tinggal
@@ -63,7 +63,7 @@ export default function Engineering() {
                 <section className="px-4 py-6 max-w-3xl mx-auto">
 
                     <h2 className="text-2xl font-bold mb-4 text-blue-800 text-center">
-                        ESTIMASI BIAYA
+                        Estimasi Biaya Program (A) asrama
                     </h2>
                     <div className="p-4 text-center">
                         <h2 className="text-xl font-bold text-center bg-yellow-300 p-2 inline-block mb-4">
@@ -153,11 +153,12 @@ export default function Engineering() {
                         </article>
                         <article className="mt-4">
                             <h3 className="font-semibold text-blue-600">✔ Cicilan / Dana Talang</h3>
-                            <p className="text-sm text-right text-blue-600 font-semibold">
-                                Dana talang : 30-45jt/siswa
-                                [setelah COE keluar]
-
-                            </p>
+                            <div className="Flex justify-items-end">
+                                <p className="text-sm text-blue-600 text-center font-semibold bg-pink-200 max-w-96 ">
+                                    Dana talang : 30-45jt/siswa
+                                    [setelah COE keluar]
+                                </p>
+                            </div>
                             <ol className="list-decimal ml-6 text-gray-800">
                                 <li>
                                     <strong>40 juta</strong> – Jika pembayaran dicicil minimal 15 juta tiap 2 bulan sampai lunas
@@ -168,9 +169,12 @@ export default function Engineering() {
                                 <li>
                                     <strong>45 juta</strong> – Jika pembayaran di awal 5 juta, dan cicilan minimal 2,5 juta per bulan sampai lunas
                                 </li>
-                                <li classname="bg-green-300 rounded-b-md">
-                                    <strong>47,5 juta</strong> – Jika pembayaran di awal 5 juta, tiap ada pembayaran eksternal (biaya sendiri),
-                                    dan <strong>sisa uang dibayarkan setelah di Jepang</strong>
+                                <li classname="rounded-b-md">
+                                    <div className="bg-green-200">
+
+                                        <strong>47,5 juta</strong> – Jika pembayaran di awal 5 juta, tiap ada pembayaran eksternal (biaya sendiri),
+                                        dan <strong>sisa uang dibayarkan setelah di Jepang</strong>
+                                    </div>
                                 </li>
                             </ol>
                         </article>
@@ -193,7 +197,7 @@ export default function Engineering() {
                                     <tr>
                                         <th>No</th>
                                         <th>Nama Industri</th>
-                                        <th>Gaji rata-rata/bln [JPY/IDR]</th>
+                                        <th>Gaji rata-rata/Bulan [JPY/IDR]</th>
                                     </tr>
                                 </thead>
                                 <tbody>
