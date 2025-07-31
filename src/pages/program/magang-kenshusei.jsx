@@ -10,11 +10,11 @@ import Navbar from "../Components/Navbar";
 export default function MagangKenshusei() {
     return (
         <>
-            <title>Magang Kenshusei | LPK Yaruki Solusi Indonesia</title>
+            <title>Magang Kenshusei</title>
             <meta name="description" content="Program magang Kenshusei: Program pelatihan keterampilan praktis dan pemahaman budaya kerja Jepang. 
 Kontrak Program magang 3- 5 tahun
 . Persyaratan, fasilitas, dan estimasi biaya lengkap di LPK Yaruki." />
-            <meta name="keywords" content="Magang Jepang, Kenshusei, LPK Yaruki, Program Magang, Persyaratan Magang Jepang, Biaya Magang Jepang" />
+            <meta name="keywords" content="Magang ke Jepang, Magang Jepang, Kenshusei, LPK Yaruki, Program Magang, Persyaratan Magang Jepang, Biaya Magang Jepang" />
             <Navbar />
 
             <main className="pt-20 p-2">
@@ -140,7 +140,8 @@ Kontrak Program magang 3- 5 tahun
                                         </tbody>
                                     </table>
                                     <p className="mt-2 italic text-sm">
-                                        Termasuk: registrasi, modul, seragam, dormitory, passport, MCU, visa, ticket
+                                        Termasuk: Registrasi, Modul, Seragam, Dormitory & Ticket
+                                        [passport, MCU, Visa dari siswa, Pengurusan dibantu LPK]
                                     </p>
                                 </div>
                             </div>
@@ -251,7 +252,8 @@ Kontrak Program magang 3- 5 tahun
                                 </tbody>
                             </table>
                             <p className="mt-2 italic text-sm">
-                                Termasuk: registrasi, modul, seragam, dormitory, passport, MCU, visa, ticket
+                                Termasuk: Registrasi, Modul, Seragam, Dormitory & Ticket
+                                [Passport, MCU, Visa dari siswa, Pengurusan dibantu LPK]
                             </p>
                         </div>
                     </p>

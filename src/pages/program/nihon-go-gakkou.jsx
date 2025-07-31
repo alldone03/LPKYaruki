@@ -10,7 +10,7 @@ export default function NihonGoGakkou() {
         <>
             {/* SEO */}
 
-            <title>Nihon Go Gakkou - Program Belajar Bahasa Jepang | LPK Yaruki Solusi Indonesia</title>
+            <title>Nihon Go Gakkou - Program Belajar Bahasa Jepang</title>
             <meta
                 name="description"
                 content="Program Nihon Go Gakkou dari LPK Yaruki: Belajar bahasa dan budaya Jepang, persiapan kuliah atau karir di Jepang, serta informasi biaya dan persyaratan lengkap."

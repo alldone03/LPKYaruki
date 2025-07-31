@@ -9,7 +9,7 @@ export default function Engineering() {
     return (
         <>
 
-            <title>Program Engineering Magang Jepang | LPK Yaruki Solusi Indonesia</title>
+            <title>Program Engineering Magang Jepang</title>
             <meta name="description" content="Program Engineering LPK Yaruki membantu insinyur Indonesia bekerja di Jepang. Persyaratan, fasilitas, estimasi biaya, dan skema pembayaran lengkap di sini." />
             <meta name="keywords" content="Engineering Jepang, Magang Jepang, LPK Yaruki, Program Insinyur, Kerja di Jepang, SSW, Persyaratan Magang Jepang" />
             <meta property="og:title" content="Program Engineering Magang Jepang | LPK Yaruki" />
@@ -134,53 +134,13 @@ export default function Engineering() {
                                 </tbody>
                             </table>
                             <p className="mt-2 italic text-sm">
-                                Termasuk: registrasi, modul, seragam, dormitory, passport, MCU, Visa, Ticket
+                                Termasuk: Registrasi, Modul, Seragam, Dormitory, Passport, MCU, Visa, Ticket
                             </p>
                         </div>
                     </div>
 
                 </section>
-                <section className="px-4 py-6 max-w-3xl mx-auto">
-                    <div>
-                        <h2 className="text-xl font-bold text-blue-700 mb-2">Program SSW/TG</h2>
-                        <article>
-                            <h3 className="font-semibold text-blue-600">✔ Full Payment</h3>
-                            <ol className="list-decimal ml-6 text-gray-800">
-                                <li>
-                                    <strong>37,5 juta</strong> – Bila pembayaran <strong>cash di awal masuk</strong>
-                                </li>
-                            </ol>
-                        </article>
-                        <article className="mt-4">
-                            <h3 className="font-semibold text-blue-600">✔ Cicilan / Dana Talang</h3>
-                            <div className="Flex justify-items-end">
-                                <p className="text-sm text-blue-600 text-center font-semibold bg-pink-200 max-w-96 ">
-                                    Dana talang : 30-45jt/siswa
-                                    [setelah COE keluar]
-                                </p>
-                            </div>
-                            <ol className="list-decimal ml-6 text-gray-800">
-                                <li>
-                                    <strong>40 juta</strong> – Jika pembayaran dicicil minimal 15 juta tiap 2 bulan sampai lunas
-                                </li>
-                                <li>
-                                    <strong>42,5 juta</strong> – Jika pembayaran dicicil minimal 5 juta per bulan sampai lunas
-                                </li>
-                                <li>
-                                    <strong>45 juta</strong> – Jika pembayaran di awal 5 juta, dan cicilan minimal 2,5 juta per bulan sampai lunas
-                                </li>
-                                <li classname="rounded-b-md">
-                                    <div className="bg-green-200">
 
-                                        <strong>47,5 juta</strong> – Jika pembayaran di awal 5 juta, tiap ada pembayaran eksternal (biaya sendiri),
-                                        dan <strong>sisa uang dibayarkan setelah di Jepang</strong>
-                                    </div>
-                                </li>
-                            </ol>
-                        </article>
-                    </div>
-
-                </section>
                 {/* <section className="px-4 py-6 max-w-3xl mx-auto">
 
                     <h2 className="text-2xl font-bold mb-4 text-blue-800 text-center">

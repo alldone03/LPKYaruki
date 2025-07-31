@@ -10,7 +10,7 @@ export default function TokuteiGinou() {
 
             {/* SEO */}
 
-            <title>Tokutei Ginou - Program Penyaluran Tenaga Kerja ke Jepang | LPK Yaruki Solusi Indonesia</title>
+            <title>Tokutei Ginou - Program Penyaluran Tenaga Kerja ke Jepang</title>
             <meta name="description" content="Informasi lengkap tentang program Tokutei Ginou, persyaratan, fasilitas, dan estimasi biaya penyaluran tenaga kerja ke Jepang melalui LPK Yaruki." />
             <meta name="keywords" content="Tokutei Ginou, kerja di Jepang, tenaga kerja, LPK Yaruki, visa keahlian khusus, program Jepang" />
             <meta property="og:title" content="Tokutei Ginou - Program Penyaluran Tenaga Kerja ke Jepang" />
@@ -148,7 +148,7 @@ export default function TokuteiGinou() {
                                         </tbody>
                                     </table>
                                     <p className="mt-2 italic text-sm">
-                                        Termasuk: registrasi, modul, seragam, dormitory, test fee (JFT, SSW), passport, MCU, Visa, Ticket
+                                        Termasuk: Registrasi, Modul, Seragam, Dormitory, Test fee [JFT,SSW] Passport, MCU, Visa, Ticket
                                     </p>
                                 </div>
                             </div>
@@ -161,7 +161,7 @@ export default function TokuteiGinou() {
                 <section className="px-4 py-6 max-w-3xl mx-auto">
                     <h2 className="text-2xl font-bold mb-4 text-blue-800 text-center">
 
-                        (1) Alternatif program belajar
+                        Alternatif program belajar
                     </h2>
                     <div className="text-2xl font-bold mb-4 text-blue-800 text-center">
 
@@ -193,7 +193,7 @@ export default function TokuteiGinou() {
                             </table>
                         </div>
                     </div>
-                    <h3 className="text-2xl font-bold mb-4 bg-amber-300 text-center">Program (A) TG/SSW -Standar Waktu persiapan 13 Bulan [@2jam/hari,Senin-Jumat 300Jam] @Company</h3>
+                    <h3 className="text-2xl font-bold mb-4 bg-amber-300 text-center">Program (B) TG/SSW -Standar Waktu persiapan 13 Bulan [@2jam/hari,Senin-Jumat 300Jam] @Company</h3>
                     <p>
                         <div className="overflow-auto mt-4">
                             <table className="table-auto border-collapse border w-full text-center">
@@ -266,7 +266,7 @@ export default function TokuteiGinou() {
                                 </tbody>
                             </table>
                             <p className="mt-2 italic text-sm">
-                                Termasuk: registrasi, modul, seragam, dormitory, Test fee [JFT, SSW], passport, MCU, Visa, Ticket
+                                Termasuk: Registrasi, Modul, Seragam, Dormitory, Test fee [JFT, SSW], Passport, MCU, Visa, Ticket
                             </p>
                         </div>
 

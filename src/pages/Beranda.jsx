@@ -66,16 +66,16 @@ export default function Beranda() {
             {/*  SEO */}
 
 
-            <title>Kerja ke Jepang | LPK Yaruki Solusi Indonesia</title>
+            <title>Program Kerja ke Jepang</title>
             <meta name="robots" content="index, follow" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
             <meta name="description" content="LPK Yaruki Solusi Indonesia adalah lembaga pelatihan bahasa Jepang dan penempatan kerja ke Jepang. Menyediakan program pelatihan lengkap seperti magang, SSW, engineer, hingga kuliah sambil magang, dengan bidang kerja seperti mekanik mobil, body repair, manufacturing, maintenance, engineering, dan IT." />
-            <meta name="keywords" content="LPK Yaruki, pelatihan Jepang, magang Jepang, kerja di Jepang, program kerja Jepang, SSW, Tokutei Ginou, engineering, Nihon Go Gakkou, bidang pekerjaan Jepang, training bahasa Jepang, mekanik mobil, body repair, manufacturing, maintenance, IT" />
+            <meta name="keywords" content="LPK Yaruki, pelatihan Jepang, magang Jepang, kerja di Jepang, program kerja ke Jepang, SSW, Tokutei Ginou, engineering, Nihon Go Gakkou, bidang pekerjaan Jepang, training bahasa Jepang, mekanik mobil, body repair, manufacturing, maintenance, IT" />
             <meta name="author" content="LPK Yaruki Solusi Indonesia" />
 
 
-            <meta property="og:title" content="Beranda | LPK Yaruki Solusi Indonesia" />
+            <meta property="og:title" content="Program Kerja ke Jepang" />
             <meta property="og:description" content="LPK Yaruki Solusi Indonesia adalah lembaga pelatihan bahasa Jepang dan pengiriman tenaga kerja ke Jepang. Tersedia program Magang, SSW, Engineer, hingga Kuliah sambil Magang dengan dukungan lengkap dari awal hingga akhir." />
             <meta property="og:type" content="website" />
             <meta property="og:url" content="https://yarukid.com/" />
@@ -102,7 +102,7 @@ export default function Beranda() {
                         <Link
                             to="https://forms.gle/f2u29zDjyyco48bU6"
                             className="btn bg-white text-blue-700 hover:bg-gray-200 font-semibold mt-8 px-6 py-2 rounded"
-                            aria-label="Daftar program kerja ke Jepang"
+                            aria-label="Daftar Program Kerja ke Jepang"
                         >
                             Daftar Sekarang
                         </Link>
@@ -224,68 +224,15 @@ export default function Beranda() {
 
 
                 </section>
-                {/* Fasilitas Section */}
-                <section className="bg-white">
+                {/* Program dan Pekerjaan */}
+                <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl md:text-4xl font-bold text-center my-6">
                         Layanan Kami
                     </h2>
-                    <div className="max-w-7xl mx-auto py-16 md:py-2 px-4 sm:px-6 lg:px-8">
-                        <h2 className="text-2xl font-bold mb-4 text-blue-800 text-center">Fasilitas Pelatihan</h2>
-                        <div className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 p-6">
-                            <img loading="lazy"
-                                src={Picture1} alt="Ruang kelas pelatihan bahasa Jepang"
-                            />
-                            <img loading="lazy"
-                                src={Picture2} alt="Fasilitas pelatihan teknis seperti pengelasan" />
-                            <img loading="lazy"
-                                src={Picture3} alt="Asrama siswa program ke Jepang" />
-                        </div>
-                        <p className="mt-4 text-lg text-gray-500 text-justify indent-8">
-                            Kami menyediakan fasilitas lengkap dan representatif bagi siswa dalam mengikuti pelatihan bahasa Jepang, budaya kerja, serta keterampilan teknis dari awal hingga proses keberangkatan ke Jepang.
-                        </p>
-                    </div>
-                </section>
-
-                {/* Proses Tahapan */}
-                <section>
-                    <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-2">
-                        <h2 className="text-2xl font-bold mb-4 text-blue-800 text-center">Tahapan Proses Pelatihan</h2>
-                        <ul className="steps steps-vertical mt-4">
-                            <li className="step step-primary card pr-4 text-accent-content shadow-sm py-2">
-                                <div className="flex flex-col gap-2">
-                                    <div className="font-bold text-lg text-center">Kursus Bahasa Jepang</div>
-                                    <div className="text-justify indent-8">
-                                        Lembaga kami memberikan program kursus bahasa Jepang dengan target lulus JLPT N5 [150 jam] atau N4 / JFT A2 [300 jam] setara 3-4 bulan pembelajaran.
-                                    </div>
-                                </div>
-                            </li>
-                            <li className="step step-primary card pr-4 text-accent-content shadow-sm py-2">
-                                <div className="flex flex-col gap-2">
-                                    <div className="font-bold text-lg text-center">Pelatihan Skill</div>
-                                    <div className="text-justify indent-8">
-                                        Dalam naungan PT Yaruki Solusi Indonesia, kami memberikan pelatihan keterampilan seperti pengelasan, perawatan mesin, sistem ERP dan ketrampilan lainnya bagi pemula untuk meningkatkan skill.
-                                    </div>
-                                </div>
-                            </li>
-                            <li className="step step-primary card pr-4 text-accent-content shadow-sm py-2">
-                                <div className="flex flex-col gap-2">
-                                    <div className="font-bold text-lg text-center">Penempatan Kerja</div>
-                                    <div className="text-justify indent-8">
-                                        Siswa yang memiliki sertifikat keahlian khusus dan sertifikat bahasa Jepang dapat kami salurkan sebagai karyawan di Perusahaan yang berada di Indonesia dan Jepang dengan menggunakan visa khusus pekerja asing (Magang,SSW/Tokutei Ginou & Engineer).
-
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-
-                {/* Program dan Pekerjaan */}
-                <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="card w-full outline outline-info text-info-content shadow-sm">
                             <div className="card-body">
-                                <h2 className="text-2xl font-bold mb-4 text-blue-800 text-center">Pilihan Program Kerja di Jepang</h2>
+                                <h3 className="text-2xl font-bold mb-4 text-blue-800 text-center">Program Kerja di Jepang</h3>
                                 <ul className="mt-6 flex flex-col gap-2 text-lg">
                                     <div className="grid gap-6 md:grid-cols-2 ">
                                         {[
@@ -338,6 +285,70 @@ export default function Beranda() {
                         </div>
                     </div>
                 </section>
+                {/* Fasilitas Section */}
+                <section className="bg-white">
+
+                    <div className="max-w-7xl mx-auto py-16 md:py-2 px-4 sm:px-6 lg:px-8">
+                        <h2 className="text-2xl font-bold mb-4 text-blue-800 text-center">Fasilitas Pelatihan</h2>
+                        <div className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 p-6">
+                            <div className="h-96 w-full overflow-hidden rounded-lg shadow-md ">
+
+                                <img loading="lazy"
+                                    src={Picture1} alt="Ruang kelas pelatihan bahasa Jepang" className="w-full h-full object-cover aspect-square"
+                                />
+                            </div>
+                            <div className="h-96 w-full overflow-hidden rounded-lg shadow-md ">
+
+                                <img loading="lazy"
+                                    src={Picture2} alt="Fasilitas pelatihan teknis seperti pengelasan" className="w-full h-full object-cover aspect-square" />
+                            </div>
+                            <div className="h-96 w-full overflow-hidden rounded-lg shadow-md ">
+
+                                <img loading="lazy"
+                                    src={Picture3} alt="Asrama siswa program ke Jepang" className="w-full h-full object-cover aspect-square" />
+                            </div>
+                        </div>
+                        <p className="mt-4 text-lg text-gray-500 text-justify indent-8">
+                            Kami menyediakan fasilitas lengkap dan representatif bagi siswa dalam mengikuti pelatihan bahasa Jepang, budaya kerja, serta keterampilan teknis dari awal hingga proses keberangkatan ke Jepang.
+                        </p>
+                    </div>
+                </section>
+
+                {/* Proses Tahapan */}
+                <section>
+                    <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-2">
+                        <h2 className="text-2xl font-bold mb-4 text-blue-800 text-center">Tahapan Proses Pelatihan</h2>
+                        <ul className="steps steps-vertical mt-4">
+                            <li className="step step-primary card pr-4 text-accent-content shadow-sm py-2">
+                                <div className="flex flex-col gap-2">
+                                    <div className="font-bold text-lg text-center">Kursus Bahasa Jepang</div>
+                                    <div className="text-justify indent-8">
+                                        Lembaga kami memberikan program kursus bahasa Jepang dengan target lulus JLPT N5 [150 jam] atau N4 / JFT A2 [300 jam] setara 3-4 bulan pembelajaran.
+                                    </div>
+                                </div>
+                            </li>
+                            <li className="step step-primary card pr-4 text-accent-content shadow-sm py-2">
+                                <div className="flex flex-col gap-2">
+                                    <div className="font-bold text-lg text-center">Pelatihan Skill</div>
+                                    <div className="text-justify indent-8">
+                                        Dalam naungan PT Yaruki Solusi Indonesia, kami memberikan pelatihan keterampilan seperti pengelasan, perawatan mesin, sistem ERP dan ketrampilan lainnya bagi pemula untuk meningkatkan skill.
+                                    </div>
+                                </div>
+                            </li>
+                            <li className="step step-primary card pr-4 text-accent-content shadow-sm py-2">
+                                <div className="flex flex-col gap-2">
+                                    <div className="font-bold text-lg text-center">Penempatan Kerja</div>
+                                    <div className="text-justify indent-8">
+                                        Siswa yang memiliki sertifikat keahlian khusus dan sertifikat bahasa Jepang dapat kami salurkan sebagai karyawan di Perusahaan yang berada di Indonesia dan Jepang dengan menggunakan visa khusus pekerja asing (Magang,SSW/Tokutei Ginou & Engineer).
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+
 
                 <section className="max-w-5xl mx-auto px-4 py-8">
                     <h2 className="text-2xl font-bold mb-4 text-blue-800 text-center">Program Pelatihan Menuju Kerja ke Jepang (SSW)</h2>
@@ -439,6 +450,7 @@ export default function Beranda() {
                     <p class="mt-4 text-sm text-red-600 italic">Catatan: Hanya jalur SSW-2 yang memperbolehkan membawa keluarga ke Jepang.</p>
 
                 </section>
+
                 <section className="p-6 max-w-5xl mx-auto">
                     <h2 className="text-3xl font-bold mb-4 text-center text-blue-800">Job Data - Lowongan Magang Jepang 2025</h2>
                     <img src={sampleImage} alt="Sample Job Database" className="mb-6 rounded shadow-lg w-full" />
@@ -480,21 +492,62 @@ export default function Beranda() {
 
                     </div>
                 </section>
+                <section className="px-4 py-6 max-w-3xl mx-auto">
+                    <div>
+                        <h2 className="text-2xl font-bold mb-4 text-blue-800 text-center">Simulasi Payment Program SSW/TG</h2>
+                        <article>
+                            <h3 className="font-semibold text-blue-600">✔ Full Payment</h3>
+                            <ol className="list-decimal ml-6 text-gray-800">
+                                <li>
+                                    <strong>37,5 juta</strong> – Bila pembayaran <strong>cash di awal masuk</strong>
+                                </li>
+                            </ol>
+                        </article>
+                        <article className="mt-4">
+                            <h3 className="font-semibold text-blue-600">✔ Cicilan / Dana Talang</h3>
+                            <div className="Flex justify-items-end">
+                                <p className="text-sm text-blue-600 text-center font-semibold bg-pink-200 max-w-96 ">
+                                    Dana talang : 30-45jt/siswa
+                                    [setelah COE keluar]
+                                </p>
+                            </div>
+                            <ol className="list-decimal ml-6 text-gray-800">
+                                <li>
+                                    <strong>40 juta</strong> – Jika pembayaran dicicil minimal 15 juta tiap 2 bulan sampai lunas
+                                </li>
+                                <li>
+                                    <strong>42,5 juta</strong> – Jika pembayaran dicicil minimal 5 juta per bulan sampai lunas
+                                </li>
+                                <li>
+                                    <strong>45 juta</strong> – Jika pembayaran di awal 5 juta, dan cicilan minimal 2,5 juta per bulan sampai lunas
+                                </li>
+                                <li classname="rounded-b-md">
+                                    <div className="bg-green-200">
+
+                                        <strong>47,5 juta</strong> – Jika pembayaran di awal 5 juta, tiap ada pembayaran eksternal (biaya sendiri),
+                                        dan <strong>sisa uang dibayarkan setelah di Jepang</strong>
+                                    </div>
+                                </li>
+                            </ol>
+                        </article>
+                    </div>
+
+                </section>
 
                 <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
                     <h2 className="text-2xl font-bold mb-4 text-blue-800 text-center">Foto &amp; Testimonial [LPK Yaruki-Kamindo Group]</h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                        <div className="overflow-hidden rounded-lg shadow-md">
-                            <img src={foto1} alt="Keberangkatan peserta LPK Kamindo ke Jepang" className="w-full h-auto object-cover" />
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
+                        <div className="h-96 w-full overflow-hidden rounded-lg shadow-md ">
+                            <img src={foto1} alt="Keberangkatan peserta LPK Kamindo ke Jepang" className="w-full h-full object-cover aspect-square" />
                         </div>
-                        <div className="overflow-hidden rounded-lg shadow-md">
-                            <img src={foto2} alt="Peserta LPK Kamindo di Jepang depan bangunan pertokoan" className="w-full h-auto object-cover" />
+                        <div className="h-96 w-full overflow-hidden rounded-lg shadow-md">
+                            <img src={foto2} alt="Peserta LPK Kamindo di Jepang depan bangunan pertokoan" className="w-full h-full object-cover aspect-square" />
                         </div>
-                        <div className="overflow-hidden rounded-lg shadow-md">
-                            <img src={foto3} alt="Peserta LPK Kamindo di musim salju Jepang" className="w-full h-auto object-cover" />
+                        <div className="h-96 w-full overflow-hidden rounded-lg shadow-md">
+                            <img src={foto3} alt="Peserta LPK Kamindo di musim salju Jepang" className="w-full h-full object-cover aspect-square " />
                         </div>
-                        <div className="overflow-hidden rounded-lg shadow-md">
-                            <img src={foto4} alt="Peserta LPK Kamindo di lokasi konstruksi Jepang" className="w-full h-auto object-cover" />
+                        <div className="h-96 w-full overflow-hidden rounded-lg shadow-md">
+                            <img src={foto4} alt="Peserta LPK Kamindo di lokasi konstruksi Jepang" className="w-full h-full object-cover aspect-square " />
                         </div>
                     </div>
                 </section>
