@@ -100,7 +100,7 @@ export default function Beranda() {
                             "Share Value, Membangun Manusia, Membangun Bangsa Indonesia bersama LPK Yaruki Solusi Indonesia"
                         </p>
                         <Link
-                            to="https://forms.gle/f2u29zDjyyco48bU6"
+                            to="https://docs.google.com/forms/d/1luzSS385QlGJ6d2xmW2MjXX5u8uKX7ddiOemAQhcOVU/edit?ts=6878d010&pli=1"
                             className="btn bg-white text-blue-700 hover:bg-gray-200 font-semibold mt-8 px-6 py-2 rounded"
                             aria-label="Daftar Program Kerja ke Jepang"
                         >
