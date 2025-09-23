@@ -18,6 +18,7 @@ const navbarLinks = [
             { path: "/program-kami/tokutei-ginou", name: "Tokutei Ginou" },
             { path: "/program-kami/engineering", name: "Engineering" },
             { path: "/program-kami/nihon-go-gakkou", name: "Nihon Go Gakkou" },
+            { path: "/program-kami/visa-kerja-ke-eropa", name: "Visa Kerja Ke Eropa" },
         ],
     },
     {

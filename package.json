@@ -5,7 +5,7 @@
   "type": "module",
   "homepage": "https://yaruki.com/",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "sync-homepage": "node scripts/sync-homepage.js",
     "build": "npm run sync-homepage && vite build",
     "lint": "eslint .",

@@ -100,7 +100,7 @@ export default function Beranda() {
                             "Share Value, Membangun Manusia, Membangun Bangsa Indonesia bersama LPK Yaruki Solusi Indonesia"
                         </p>
                         <Link
-                            to="https://docs.google.com/forms/d/1luzSS385QlGJ6d2xmW2MjXX5u8uKX7ddiOemAQhcOVU/edit?ts=6878d010&pli=1"
+                            to="https://forms.gle/TEdNudQFoTXykdqX9" target="_blank"
                             className="btn bg-white text-blue-700 hover:bg-gray-200 font-semibold mt-8 px-6 py-2 rounded"
                             aria-label="Daftar Program Kerja ke Jepang"
                         >
@@ -121,7 +121,7 @@ export default function Beranda() {
                         LPK Yaruki Solusi Indonesia adalah lembaga resmi pengirim tenaga kerja ke Jepang yang berkomitmen membangun masa depan anak bangsa. Kami menghadirkan berbagai program unggulan seperti:
                     </p>
 
-                    <div className="grid gap-6 md:flex">
+                    <div className="grid gap-6 md:grid-cols-3">
                         {[
                             {
                                 title: "Magang [Kenshusei]",
@@ -142,6 +142,11 @@ export default function Beranda() {
                                 title: "Kuliah Sambil Magang (Nihon Go Gakkou)",
                                 desc: "Program Belajar Bahasa dan budaya Jepang. Setelah lulus program,Siswa Bisa melanjutkan Kuliah kejuruan atau langsung Berkarir di Perusahaan di Jepang.",
                                 link: "/program-kami/nihon-go-gakkou",
+                            },
+                            {
+                                title: "Visa Kerja ke Eropa",
+                                desc: "Program visa kerja ke Eropa Timur memberikan kesempatan bagi tenaga kerja Indonesia untuk bekerja secara legal di berbagai sektor.",
+                                link: "/program-kami/visa-kerja-ke-eropa",
                             },
                         ].map((program, idx) => (
                             <div key={idx} className="card bg-base-100 shadow-md p-4 md:w-56 md:flex justify-between">
@@ -255,6 +260,11 @@ export default function Beranda() {
                                                 title: "Kuliah Sambil Magang (Nihon Go Gakkou)",
                                                 desc: "Program Belajar Bahasa dan budaya Jepang. Setelah lulus program,Siswa Bisa melanjutkan Kuliah kejuruan atau langsung Berkarir di Perusahaan di Jepang.",
                                                 link: "/program-kami/nihon-go-gakkou",
+                                            },
+                                            {
+                                                title: "Visa Kerja ke Eropa",
+                                                desc: "Program visa kerja ke Eropa Timur memberikan kesempatan bagi tenaga kerja Indonesia untuk bekerja secara legal di berbagai sektor.",
+                                                link: "/program-kami/visa-kerja-ke-eropa",
                                             },
                                         ].map((program, idx) => (
                                             <div key={idx} className="card bg-base-100 shadow-md p-4 md:w-56 md:flex justify-between">

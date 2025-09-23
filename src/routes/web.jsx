@@ -9,6 +9,7 @@ import ProgramKami from "../pages/Program-kami";
 
 import TentangKami from "../pages/Tentang-kami";
 import Artikel from "../pages/artikel";
+import VisaKerjaEropa from "../pages/program/visa-kerja-Eropa-Timur";
 
 const routes = [
   {
@@ -50,6 +51,11 @@ const routes = [
     path: "/program-kami/nihon-go-gakkou",
     element: <NihonGoGakkou />,
     name: "Nihon Go Gakkou",
+  },
+  {
+    path: "/program-kami/visa-kerja-ke-eropa",
+    element: <VisaKerjaEropa />,
+    name: "Visa Kerja Eropa",
   },
   // {
   //   path: "/artikel",
