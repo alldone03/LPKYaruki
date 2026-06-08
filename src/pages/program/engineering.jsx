@@ -76,7 +76,7 @@ export default function Engineering() {
                                     <tr>
                                         <th className="border p-2" rowSpan="2">Activities</th>
                                         <th className="border p-2" colSpan="10">Month</th>
-                                        <th className="border p-2" rowSpan="2">Budget</th>
+                                        {/* <th className="border p-2" rowSpan="2">Budget</th> */}
                                     </tr>
                                     <tr>
                                         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((m) => (
@@ -90,31 +90,31 @@ export default function Engineering() {
                                             name: "Learning Japanese [N3]",
                                             months: [1, 2, 3, 4, 5, 6],
                                             color: "bg-sky-400",
-                                            budget: "Rp 20,000,000",
+                                            // budget: "Rp 20,000,000",
                                         },
                                         {
                                             name: "Pre - Interview",
                                             months: [7],
                                             color: "bg-lime-400",
-                                            budget: "Rp 5,000,000",
+                                            // budget: "Rp 5,000,000",
                                         },
                                         {
                                             name: "Job Matching",
                                             months: [8],
                                             color: "bg-orange-300",
-                                            budget: "Rp 10,000,000",
+                                            // budget: "Rp 10,000,000",
                                         },
                                         {
                                             name: "Visa Management",
                                             months: [9],
                                             color: "bg-red-800 text-white",
-                                            budget: "Rp 5,000,000",
+                                            // budget: "Rp 5,000,000",
                                         },
                                         {
                                             name: "Departure to Japan",
                                             months: [10],
                                             color: "bg-red-500 text-white",
-                                            budget: "Rp 11,000,000",
+                                            // budget: "Rp 11,000,000",
                                         },
                                     ].map((act, i) => (
                                         <tr key={i}>
@@ -124,13 +124,13 @@ export default function Engineering() {
                                                     {act.months.includes(m) ? "" : ""}
                                                 </td>
                                             ))}
-                                            <td className="border p-2">{act.budget}</td>
+                                            {/* <td className="border p-2">{act.budget}</td> */}
                                         </tr>
                                     ))}
-                                    <tr>
-                                        <td colSpan="11" className="border p-2 font-bold text-right">Total</td>
-                                        <td className="border p-2 font-bold">Rp 51,000,000</td>
-                                    </tr>
+                                    {/* <tr> */}
+                                        {/* <td colSpan="11" className="border p-2 font-bold text-right">Total</td> */}
+                                        {/* <td className="border p-2 font-bold">Rp 51,000,000</td> */}
+                                    {/* </tr> */}
                                 </tbody>
                             </table>
                             <p className="mt-2 italic text-sm">

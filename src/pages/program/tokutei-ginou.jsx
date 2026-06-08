@@ -84,7 +84,7 @@ export default function TokuteiGinou() {
                                             <tr>
                                                 <th className="border p-2" rowSpan="2">Activities</th>
                                                 <th className="border p-2" colSpan="8">Month</th>
-                                                <th className="border p-2" rowSpan="2">Budget</th>
+                                                {/* <th className="border p-2" rowSpan="2">Budget</th> */}
                                             </tr>
                                             <tr>
                                                 {[1, 2, 3, 4, 5, 6, 7, 8].map((m) => (
@@ -98,37 +98,37 @@ export default function TokuteiGinou() {
                                                     name: "Learning Japanese [N4]",
                                                     months: [1, 2, 3],
                                                     color: "bg-sky-400",
-                                                    budget: "Rp 10,500,000",
+                                                    // budget: "Rp 10,500,000",
                                                 },
                                                 {
                                                     name: "Learning & test SSW [Specified Skill Worker]",
                                                     months: [4],
                                                     color: "bg-pink-300",
-                                                    budget: "Rp 2,000,000",
+                                                    // budget: "Rp 2,000,000",
                                                 },
                                                 {
                                                     name: "Pre - Interview",
                                                     months: [5],
                                                     color: "bg-lime-400",
-                                                    budget: "Rp 4,000,000",
+                                                    // budget: "Rp 4,000,000",
                                                 },
                                                 {
                                                     name: "Job Matching",
                                                     months: [6],
                                                     color: "bg-orange-300",
-                                                    budget: "Rp 5,000,000",
+                                                    // budget: "Rp 5,000,000",
                                                 },
                                                 {
                                                     name: "Visa Management",
                                                     months: [7],
                                                     color: "bg-red-800 text-white",
-                                                    budget: "Rp 5,000,000",
+                                                    // budget: "Rp 5,000,000",
                                                 },
                                                 {
                                                     name: "Departure to Japan",
                                                     months: [8],
                                                     color: "bg-red-500 text-white",
-                                                    budget: "Rp 11,000,000",
+                                                    // budget: "Rp 11,000,000",
                                                 },
                                             ].map((act, i) => (
                                                 <tr key={i}>
@@ -138,13 +138,13 @@ export default function TokuteiGinou() {
                                                             {/* {act.months.includes(m) ? "●" : ""} */}
                                                         </td>
                                                     ))}
-                                                    <td className="border p-2">{act.budget}</td>
+                                                    {/* <td className="border p-2">{act.budget}</td> */}
                                                 </tr>
                                             ))}
-                                            <tr>
+                                            {/* <tr>
                                                 <td colSpan="9" className="border p-2 font-bold text-right">Total</td>
                                                 <td className="border p-2 font-bold">Rp 37,500,000</td>
-                                            </tr>
+                                            </tr> */}
                                         </tbody>
                                     </table>
                                     <p className="mt-2 italic text-sm">
@@ -201,7 +201,7 @@ export default function TokuteiGinou() {
                                     <tr>
                                         <th className="border p-2" rowSpan="2">Activities</th>
                                         <th className="border p-2" colSpan="13">Month</th>
-                                        <th className="border p-2" rowSpan="2">Budget</th>
+                                        {/* <th className="border p-2" rowSpan="2">Budget</th> */}
                                     </tr>
                                     <tr>
                                         {[...Array(13)].map((_, i) => (
@@ -215,37 +215,37 @@ export default function TokuteiGinou() {
                                             name: "Learning Japanese [N4]",
                                             months: [1, 2, 3, 4, 5, 6, 7, 8],
                                             color: "bg-sky-400",
-                                            budget: "Rp 12,000,000",
+                                            // budget: "Rp 12,000,000",
                                         },
                                         {
                                             name: "Learning & test SSW\n[Specified Skill Worker]",
                                             months: [9],
                                             color: "bg-pink-200",
-                                            budget: "Rp 2,000,000",
+                                            // budget: "Rp 2,000,000",
                                         },
                                         {
                                             name: "Pre - Interview",
                                             months: [10],
                                             color: "bg-green-300",
-                                            budget: "Rp 4,000,000",
+                                            // budget: "Rp 4,000,000",
                                         },
                                         {
                                             name: "Job Matching",
                                             months: [11],
                                             color: "bg-orange-300",
-                                            budget: "Rp 5,000,000",
+                                            // budget: "Rp 5,000,000",
                                         },
                                         {
                                             name: "Visa Management",
                                             months: [12],
                                             color: "bg-red-800 text-white",
-                                            budget: "Rp 5,000,000",
+                                            // budget: "Rp 5,000,000",
                                         },
                                         {
                                             name: "Departure to Japan",
                                             months: [13],
                                             color: "bg-red-500 text-white",
-                                            budget: "Rp 11,000,000",
+                                            // budget: "Rp 11,000,000",
                                         },
                                     ].map((act, i) => (
                                         <tr key={i}>
@@ -256,13 +256,13 @@ export default function TokuteiGinou() {
                                                     className={`border p-2 ${act.months.includes(m + 1) ? act.color : ""}`}
                                                 ></td>
                                             ))}
-                                            <td className="border p-2 whitespace-nowrap">{act.budget}</td>
+                                            {/* <td className="border p-2 whitespace-nowrap">{act.budget}</td> */}
                                         </tr>
                                     ))}
-                                    <tr>
+                                    {/* <tr>
                                         <td colSpan="14" className="border p-2 font-bold text-right">Total</td>
                                         <td className="border p-2 font-bold">Rp 39,000,000</td>
-                                    </tr>
+                                    </tr> */}
                                 </tbody>
                             </table>
                             <p className="mt-2 italic text-sm">

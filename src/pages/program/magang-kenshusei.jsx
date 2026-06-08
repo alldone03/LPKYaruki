@@ -82,7 +82,7 @@ Kontrak Program magang 3- 5 tahun
                                             <tr>
                                                 <th className="border p-2" rowSpan="2">Activities</th>
                                                 <th className="border p-2" colSpan="6">Month</th>
-                                                <th className="border p-2" rowSpan="2">Budget</th>
+                                                {/* <th className="border p-2" rowSpan="2">Budget</th> */}
                                             </tr>
                                             <tr>
                                                 {[1, 2, 3, 4, 5, 6].map((m) => (
@@ -96,31 +96,31 @@ Kontrak Program magang 3- 5 tahun
                                                     name: "Learning Japanese [N5]",
                                                     months: [1, 2],
                                                     color: "bg-sky-400",
-                                                    budget: "Rp 8,000,000",
+                                                    // budget: "Rp 8,000,000",
                                                 },
                                                 {
                                                     name: "Pre - Interview",
                                                     months: [3],
                                                     color: "bg-lime-400",
-                                                    budget: "Rp 4,000,000",
+                                                    // budget: "Rp 4,000,000",
                                                 },
                                                 {
                                                     name: "Job Matching",
                                                     months: [4],
                                                     color: "bg-orange-300",
-                                                    budget: "Rp 5,000,000",
+                                                    // budget: "Rp 5,000,000",
                                                 },
                                                 {
                                                     name: "Visa Management",
                                                     months: [5],
                                                     color: "bg-red-800 text-white",
-                                                    budget: "Rp 5,000,000",
+                                                    // budget: "Rp 5,000,000",
                                                 },
                                                 {
                                                     name: "Departure to Japan",
                                                     months: [6],
                                                     color: "bg-red-500 text-white",
-                                                    budget: "Rp 11,000,000",
+                                                    // budget: "Rp 11,000,000",
                                                 },
                                             ].map((act, i) => (
                                                 <tr key={i}>
@@ -130,13 +130,13 @@ Kontrak Program magang 3- 5 tahun
                                                             {act.months.includes(m) ? "" : ""}
                                                         </td>
                                                     ))}
-                                                    <td className="border p-2">{act.budget}</td>
+                                                    {/* <td className="border p-2">{act.budget}</td> */}
                                                 </tr>
                                             ))}
-                                            <tr>
+                                            {/* <tr>
                                                 <td colSpan="7" className="border p-2 font-bold text-right">Total</td>
                                                 <td className="border p-2 font-bold">Rp 33,000,000</td>
-                                            </tr>
+                                            </tr> */}
                                         </tbody>
                                     </table>
                                     <p className="mt-2 italic text-sm">
@@ -194,7 +194,7 @@ Kontrak Program magang 3- 5 tahun
                                     <tr>
                                         <th className="border p-2" rowSpan="2">Activities</th>
                                         <th className="border p-2" colSpan="9">Month</th>
-                                        <th className="border p-2" rowSpan="2">Budget</th>
+                                        {/* <th className="border p-2" rowSpan="2">Budget</th> */}
                                     </tr>
                                     <tr>
                                         {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((m) => (
@@ -208,31 +208,31 @@ Kontrak Program magang 3- 5 tahun
                                             name: "Learning Japanese [N5]",
                                             months: [1, 2, 3, 4, 5],
                                             color: "bg-sky-400",
-                                            budget: "Rp 6,000,000",
+                                            // budget: "Rp 6,000,000",
                                         },
                                         {
                                             name: "Pre - Interview",
                                             months: [6],
                                             color: "bg-lime-400",
-                                            budget: "Rp 4,000,000",
+                                            // budget: "Rp 4,000,000",
                                         },
                                         {
                                             name: "Job Matching",
                                             months: [7],
                                             color: "bg-orange-300",
-                                            budget: "Rp 5,000,000",
+                                            // budget: "Rp 5,000,000",
                                         },
                                         {
                                             name: "Visa Management",
                                             months: [8],
                                             color: "bg-red-800 text-white",
-                                            budget: "Rp 5,000,000",
+                                            // budget: "Rp 5,000,000",
                                         },
                                         {
                                             name: "Departure to Japan",
                                             months: [9],
                                             color: "bg-red-500 text-white",
-                                            budget: "Rp 11,000,000",
+                                            // budget: "Rp 11,000,000",
                                         },
                                     ].map((act, i) => (
                                         <tr key={i}>
@@ -242,13 +242,13 @@ Kontrak Program magang 3- 5 tahun
                                                     {act.months.includes(m) ? "" : ""}
                                                 </td>
                                             ))}
-                                            <td className="border p-2">{act.budget}</td>
+                                            {/* <td className="border p-2">{act.budget}</td> */}
                                         </tr>
                                     ))}
-                                    <tr>
+                                    {/* <tr>
                                         <td colSpan="10" className="border p-2 font-bold text-right">Total</td>
                                         <td className="border p-2 font-bold">Rp 31,000,000</td>
-                                    </tr>
+                                    </tr> */}
                                 </tbody>
                             </table>
                             <p className="mt-2 italic text-sm">

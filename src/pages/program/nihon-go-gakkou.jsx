@@ -88,39 +88,39 @@ export default function NihonGoGakkou() {
                                 <tr className="bg-gray-200">
                                     <th className="border p-2">No</th>
                                     <th className="border p-2">Keterangan</th>
-                                    <th className="border p-2">Biaya</th>
+                                    {/* <th className="border p-2">Biaya</th> */}
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td className="border p-2">1</td>
                                     <td className="border p-2">Biaya pengurusan dokumen CoE, penerjemahan, dan pengiriman dokumen ke Jepang</td>
-                                    <td className="border p-2">Rp5.000.000</td>
+                                    {/* <td className="border p-2">Rp5.000.000</td> */}
                                 </tr>
                                 <tr>
                                     <td className="border p-2">2</td>
                                     <td className="border p-2">Pelatihan Bahasa Jepang sampai N4</td>
-                                    <td className="border p-2">Rp10.000.000</td>
+                                    {/* <td className="border p-2">Rp10.000.000</td> */}
                                 </tr>
                                 <tr>
                                     <td className="border p-2">3</td>
                                     <td className="border p-2">Biaya Deposit tempat tinggal di Jepang</td>
-                                    <td className="border p-2">Rp15.000.000</td>
+                                    {/* <td className="border p-2">Rp15.000.000</td> */}
                                 </tr>
                                 <tr>
                                     <td className="border p-2">4</td>
                                     <td className="border p-2">Uang Saku Persiapan Awal di Jepang</td>
-                                    <td className="border p-2">Rp10.000.000</td>
+                                    {/* <td className="border p-2">Rp10.000.000</td> */}
                                 </tr>
                                 <tr>
                                     <td className="border p-2">5</td>
                                     <td className="border p-2">Visa dan Tiket Pesawat</td>
-                                    <td className="border p-2">Rp10.000.000</td>
+                                    {/* <td className="border p-2">Rp10.000.000</td> */}
                                 </tr>
-                                <tr className="bg-gray-100 font-semibold">
+                                {/* <tr className="bg-gray-100 font-semibold">
                                     <td className="border p-2" colSpan={2}>Estimasi Total</td>
                                     <td className="border p-2">Rp50.000.000</td>
-                                </tr>
+                                </tr> */}
                             </tbody>
                         </table>
                     </div>
@@ -134,27 +134,27 @@ export default function NihonGoGakkou() {
                                 <tr className="bg-gray-200">
                                     <th className="border p-2">No</th>
                                     <th className="border p-2">Keterangan</th>
-                                    <th className="border p-2">Biaya</th>
+                                    {/* <th className="border p-2">Biaya</th> */}
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td className="border p-2">1</td>
                                     <td className="border p-2">Biaya Sekolah di Nihongo Gakkou (per tahun)</td>
-                                    <td className="border p-2">Rp70.000.000</td>
+                                    {/* <td className="border p-2">Rp70.000.000</td> */}
                                 </tr>
                                 <tr>
                                     <td className="border p-2">2</td>
                                     <td className="border p-2">Apartment di Jepang (per tahun)</td>
-                                    <td className="border p-2">Rp48.000.000</td>
+                                    {/* <td className="border p-2">Rp48.000.000</td> */}
                                 </tr>
-                                <tr className="bg-gray-100 font-semibold">
+                                {/* <tr className="bg-gray-100 font-semibold">
                                     <td className="border p-2" colSpan={2}>Estimasi Total</td>
                                     <td className="border p-2">Rp118.000.000</td>
-                                </tr>
+                                </tr> */}
                             </tbody>
                         </table>
-                        <p className="mt-3 text-sm italic text-red-600">*Biaya bisa berubah sesuai dengan kurs</p>
+                        {/* <p className="mt-3 text-sm italic text-red-600">*Biaya bisa berubah sesuai dengan kurs</p> */}
                     </div>
 
                 </section>

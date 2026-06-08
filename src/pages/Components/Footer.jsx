@@ -19,7 +19,11 @@ export default function Footer() {
         </button></a>
         <a href="https://wa.me/+62811918538" target="_blank" rel="noopener noreferrer">
           <button className="btn bg-[#03C755] text-white border-[#00b544] w-full">
-            WA Admin
+            WA Admin 1
+          </button></a>
+        <a href="https://wa.me/+6281310603531" target="_blank" rel="noopener noreferrer">
+          <button className="btn bg-[#03C755] text-white border-[#00b544] w-full">
+            WA Admin 2
           </button></a>
       </div>
       <footer className="bg-base text-base-content p-10 outline outline-primary">
@@ -70,7 +74,11 @@ export default function Footer() {
             </p>
             <p className="mt-2">
               <a href="https://wa.me/+62811918538" rel="noopener noreferrer" target="_blank">
-                +62811918538 (Admin LPK Yaruki)
+                +62811918538 (Admin LPK Yaruki 1)
+              </a>
+              <br />
+              <a href="https://wa.me/+6281310603531" rel="noopener noreferrer" target="_blank">
+                +6281310603531 (Admin LPK Yaruki 2)
               </a>
               <br />
               <a href="mailto:yaruki.solusi.indonesia@gmail.com">yaruki.solusi.indonesia@gmail.com</a>
